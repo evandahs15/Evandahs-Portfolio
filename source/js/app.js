@@ -1,6 +1,5 @@
-
 // JavaScript
-window.sr = ScrollReveal(); 
+window.sr = ScrollReveal() 
 
 // sr.reveal('h1', {
 //     delay: 0,
@@ -8,3 +7,4 @@ window.sr = ScrollReveal();
 //     origin: 'bottom',
 //     distance: '100px' 
 // });
+
