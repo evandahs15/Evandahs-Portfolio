@@ -190,6 +190,8 @@ html {
   box-sizing: inherit; }
 
 body {
+  height: 100%;
+  overflow: hidden;
   margin: 0;
   background-color: #FAD293;
   color: black;
@@ -275,7 +277,7 @@ p, h4 {
   letter-spacing: 0px; }
 
 .bigger, h1 {
-  font-size: 100px;
+  font-size: 80px;
   letter-spacing: 0px; }
   @media only screen and (max-device-width: 768px) and (orientation: portrait) {
     .bigger, h1 {
@@ -316,6 +318,12 @@ p, h4 {
     .small, h4 {
       font-size: 18px; } }
 
+ul {
+  margin-top: 4px;
+  font-weight: 300;
+  list-style: none;
+  padding-left: 0; }
+
 p {
   margin: 0 0 20px 0;
   font-size: 18px;
@@ -331,7 +339,7 @@ em {
   font-style: italic; }
 
 strong {
-  font-weight: bold; }
+  font-weight: 600; }
 
 .name {
   transform: rotate(-270deg);
@@ -353,6 +361,46 @@ strong {
     .intro {
       font-size: 30px; } }
 
+.project-description {
+  margin-top: 70px;
+  margin-bottom: 40px; }
+
+.about-project-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 50px;
+  align-items: start;
+  border-bottom: 3px solid black; }
+  .about-project-container li {
+    padding-bottom: 10px; }
+
+.project-body {
+  text-align: center; }
+  .project-body img {
+    width: 100%; }
+  .project-body p {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+.flex-video {
+  height: 0;
+  margin-bottom: 0.88889rem;
+  overflow: hidden;
+  padding-bottom: 56%;
+  position: relative; }
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0; }
+
 #wrapper {
   display: block;
   position: absolute;
@@ -360,10 +408,11 @@ strong {
   width: auto;
   height: auto;
   padding: 0px 15% 0px 15%;
-  margin-top: 18vh;
+  margin-top: 14vh;
   top: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  scroll-behavior: smooth; }
 
 #content {
   max-width: 100%;
@@ -397,23 +446,6 @@ strong {
   position: absolute;
   bottom: 0; }
 
-.flex-video {
-  height: 0;
-  margin-bottom: 0.88889rem;
-  overflow: hidden;
-  padding-bottom: 56%;
-  position: relative; }
-
-.flex-video iframe,
-.flex-video object,
-.flex-video embed,
-.flex-video video {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0; }
-
 #title {
   box-sizing: border-box;
   display: flex;
@@ -428,7 +460,7 @@ strong {
   right: 0;
   left: 0;
   top: 0;
-  height: 18vh; }
+  height: 14vh; }
   #title h1 {
     padding: 10px 0px 10px 0px;
     margin: 0px; }
