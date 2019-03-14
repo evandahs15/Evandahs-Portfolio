@@ -8,3 +8,12 @@ window.sr = ScrollReveal()
 //     distance: '100px' 
 // });
 
+function showNav () {
+  console.log('this is working')
+  var x = document.getElementById('fullscreen-nav')
+  if (x.className === 'fullscreen-nav') {
+    x.className += ' unfold'
+  } else {
+    x.className = 'fullscreen-nav'
+  }
+}
