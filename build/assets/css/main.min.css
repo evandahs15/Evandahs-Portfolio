@@ -407,7 +407,7 @@ strong {
   overflow: scroll;
   width: auto;
   height: auto;
-  padding: 0px 15% 0px 15%;
+  padding: 0px 13% 0px 13%;
   margin-top: 14vh;
   top: 0;
   bottom: 0;
@@ -454,7 +454,7 @@ strong {
   position: fixed;
   background: #FAD293;
   border-bottom: 3px solid black;
-  margin-left: 15%;
+  margin-left: 13%;
   padding-right: 40px;
   z-index: 5;
   right: 0;
@@ -469,6 +469,6 @@ strong {
   display: block;
   left: 0;
   height: 100vh;
-  width: 5vw;
+  width: 3vw;
   background: #DEB880;
   position: fixed; }
