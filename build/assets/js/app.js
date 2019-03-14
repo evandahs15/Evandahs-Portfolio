@@ -1,1 +1,1 @@
-window.sr=ScrollReveal();
+function showNav(){console.log("this is working");var e=document.getElementById("fullscreen-nav");"fullscreen-nav"===e.className?e.className+=" unfold":e.className="fullscreen-nav"}window.sr=ScrollReveal();

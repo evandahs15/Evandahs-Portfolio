@@ -1,0 +1,41 @@
+.nav-toggle
+  background-color: #fff
+
+.fullscreen-nav
+  display: block
+  left: 0
+  height: 100vh
+  width: 3vw
+  background: $darkBrown
+  position: fixed
+  z-index: 99
+  .nav-container
+    display: none
+
+
+.fullscreen-nav.unfold
+  padding: 25px
+  width: 100%
+  .nav-container
+    display: grid
+    grid-template-rows: 60px 240px 60px 150px
+    align-content: space-between
+    width: 320px
+    height: 100vh
+  h2
+    margin: 0px
+    margin-bottom: 40px
+  h4 
+    margin: 0px
+  li
+    padding-bottom: 10px
+
+.nav-item:hover
+  h2, h4
+    color: white
+
+
+
+
+
+
