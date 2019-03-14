@@ -414,21 +414,7 @@ strong {
     .fullscreen-nav.unfold .container img {
       width: 100%; }
 
-.nav-item {
-  color: black; }
-  .nav-item:active {
-    background: white; }
-
-#nav-item-1:hover h2, #nav-item-1:hover h4 {
-  color: #FDF973; }
-
-#nav-item-2:hover h2, #nav-item-2:hover h4 {
-  color: #F39A3E; }
-
-#nav-item-3:hover h2, #nav-item-3:hover h4 {
-  color: #CFFDFD; }
-
-#nav-item-4:hover h2, #nav-item-4:hover h4 {
+.nav-item.active h2, .nav-item.active h4 {
   color: #FAD293; }
 
 #title {

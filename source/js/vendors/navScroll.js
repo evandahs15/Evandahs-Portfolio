@@ -26,10 +26,10 @@ $(window).scroll(function () {
   // }
 
   // Assign active class to nav links while scolling
-  $('.page-section').each(function (i) {
+  $('.nav-project').each(function (i) {
     if ($(this).position().top <= scrollDistance) {
-      $('.navigation a.active').removeClass('active')
-      $('.navigation a').eq(i).addClass('active')
+      $('.nav-item.active').removeClass('active')
+      $('.nav-item').eq(i).addClass('active')
     }
   })
 }).scroll()
