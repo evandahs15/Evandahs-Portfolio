@@ -190,8 +190,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  height: 100%;
-  overflow: hidden;
   margin: 0;
   background-color: #FAD293;
   color: black;
@@ -371,16 +369,19 @@ strong {
 
 .fullscreen-nav.unfold {
   padding: 25px 0px 25px 25px;
-  width: 100%; }
+  width: 100%;
+  height: auto;
+  position: absolute; }
   .fullscreen-nav.unfold .nav-wrapper {
-    display: grid;
-    grid-template-columns: 420px auto; }
+    display: block; }
   .fullscreen-nav.unfold .nav-col-1 {
+    position: fixed;
     display: grid;
-    grid-template-rows: 60px 240px 60px 150px;
+    grid-template-rows: 60px 240px 60px 160px;
     align-content: space-between;
-    width: 320px;
-    height: 100vh; }
+    width: 30%;
+    height: 100vh;
+    float: left; }
   .fullscreen-nav.unfold h2 {
     margin: 0px;
     margin-bottom: 40px; }
@@ -390,10 +391,14 @@ strong {
     padding-bottom: 10px; }
   .fullscreen-nav.unfold .close-nav {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 60px; }
   .fullscreen-nav.unfold .nav-col-2 {
+    width: 65%;
+    float: right; }
+  .fullscreen-nav.unfold .nav-project {
+    height: 100vh;
     display: grid;
     align-content: center; }
   .fullscreen-nav.unfold .container {
@@ -408,6 +413,11 @@ strong {
       margin-bottom: 10px; }
     .fullscreen-nav.unfold .container img {
       width: 100%; }
+
+.nav-item {
+  color: black; }
+  .nav-item:active {
+    background: white; }
 
 #nav-item-1:hover h2, #nav-item-1:hover h4 {
   color: #FDF973; }
