@@ -20,33 +20,33 @@ function showNav () {
 }
 
 // Hover in nav
-// Hover for village in nav
+// Hover for about in nav
 document.getElementById('nav-item-1').onmouseover = function () {
-  document.getElementById('village-nav-summary').style.display = 'grid'
+  document.getElementById('about-nav-summary').style.opacity = '1'
 }
 document.getElementById('nav-item-1').onmouseout = function () {
-  document.getElementById('village-nav-summary').style.display = 'none'
+  document.getElementById('about-nav-summary').style.opacity = '0'
 }
-// Hover for summerfest in nav
+// Hover for village in nav
 document.getElementById('nav-item-2').onmouseover = function () {
-  document.getElementById('summerFest-nav-summary').style.display = 'grid'
+  document.getElementById('village-nav-summary').style.opacity = '1'
 }
 document.getElementById('nav-item-2').onmouseout = function () {
-  document.getElementById('summerFest-nav-summary').style.display = 'none'
+  document.getElementById('village-nav-summary').style.opacity = '0'
 }
-// Hover for poolside in nav
+// Hover for summerfest in nav
 document.getElementById('nav-item-3').onmouseover = function () {
-  document.getElementById('poolside-nav-summary').style.display = 'grid'
+  document.getElementById('summerFest-nav-summary').style.opacity = '1'
 }
 document.getElementById('nav-item-3').onmouseout = function () {
-  document.getElementById('poolside-nav-summary').style.display = 'none'
+  document.getElementById('summerFest-nav-summary').style.opacity = '0'
 }
 // Hover for about me in nav
 document.getElementById('nav-item-4').onmouseover = function () {
-  document.getElementById('about-nav-summary').style.display = 'grid'
+  document.getElementById('poolside-nav-summary').style.opacity = '1'
 }
 document.getElementById('nav-item-4').onmouseout = function () {
-  document.getElementById('about-nav-summary').style.display = 'none'
+  document.getElementById('poolside-nav-summary').style.opacity = '0'
 }
 // create a function when you click the nav-link,
 // 1. prevent default
