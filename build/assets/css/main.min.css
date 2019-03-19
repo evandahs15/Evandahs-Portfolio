@@ -371,7 +371,7 @@ strong {
 
 .fullscreen-nav.unfold {
   padding: 25px 25px 25px 25px;
-  width: 100%; }
+  width: 3vw; }
   .fullscreen-nav.unfold .nav-wrapper {
     display: block;
     height: 90vh; }

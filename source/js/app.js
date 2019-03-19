@@ -9,12 +9,13 @@ $(function () {
 
 // button to toggle navigation screen
 function showNav () {
-  console.log('this is working')
-  var x = document.getElementById('fullscreen-nav')
-  if (x.className === 'fullscreen-nav') {
-    x.className += ' unfold'
+  var nav = document.getElementById('fullscreen-nav')
+  if (nav.className === 'fullscreen-nav') {
+    $('.fullscreen-nav').animate({width: '100%'}, 1000, 'easeInOutSine')
+    nav.className += ' unfold'
   } else {
-    x.className = 'fullscreen-nav'
+    nav.className = 'fullscreen-nav'
+    $('.fullscreen-nav').animate({width: '3vw'}, 1000, 'easeInOutSine')
   }
 }
 
