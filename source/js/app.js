@@ -9,15 +9,26 @@ $(function () {
 
 // button to toggle navigation screen
 function showNav () {
-  var nav = document.getElementById('fullscreen-nav')
-  if (nav.className === 'fullscreen-nav') {
-    $('.fullscreen-nav').animate({width: '100%'}, 1000, 'easeInOutSine')
-    nav.className += ' unfold'
-  } else {
-    nav.className = 'fullscreen-nav'
-    $('.fullscreen-nav').animate({width: '3vw'}, 1000, 'easeInOutSine')
-  }
+  $('.fullscreen-nav').animate({width: '100%'}, 1000, 'easeInOutSine')
+  $('.fullscreen-nav').css('padding', '25px 25px 25px 25px')
+  $('.nav-wrapper').css('display', 'block')
 }
+
+function closeNav () {
+  $('.fullscreen-nav').animate({width: '3vw'}, 1000, 'easeInOutSine')
+  $('.fullscreen-nav').css('padding', '0')
+  $('.nav-wrapper').css('display', 'none')
+}
+// function showNav () {
+//   var nav = document.getElementById('fullscreen-nav')
+//   if (nav.className === 'fullscreen-nav') {
+//     $('.fullscreen-nav').animate({width: '100%'}, 1000, 'easeInOutSine')
+//     nav.className += ' unfold'
+//   } else {
+//     nav.className = 'fullscreen-nav'
+//     $('.fullscreen-nav').animate({width: '3vw'}, 1000, 'easeInOutSine')
+//   }
+// }
 
 // Display interaction and animation in Navigation
 // $(document).ready(
