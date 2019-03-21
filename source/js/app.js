@@ -7,8 +7,6 @@ $(function () {
   $('.animation-container').animate({display: 'none'}, 100)
 })
 
-
-
 // button to toggle navigation screen
 function showNav () {
   $('.nav-wrapper').css('display', 'block')
@@ -20,6 +18,20 @@ function closeNav () {
   $('.fullscreen-nav').animate({width: '3vw'}, 600, 'easeInOutSine')
   $('.fullscreen-nav').css('padding', '0')
   $('.nav-wrapper').css('display', 'none')
+}
+
+// button to expand content
+function showAboutSummary () {
+  $('#about-nav-summary').slideToggle('slow')
+}
+function showVillageSummary () {
+  $('#village-nav-summary').slideToggle('slow')
+}
+function showSummerfestSummary () {
+  $('#summerFest-nav-summary').slideToggle('slow')
+}
+function showPoolsideSummary () {
+  $('#poolside-nav-summary').slideToggle('slow')
 }
 
 // create a function that animates everything then place it in
@@ -83,7 +95,7 @@ $('#nav-item-4').hover(function () {
 
 $(document).ready(function () {
   function screen990 () {
-    if ($(document).width() > 991) {
+    if ($(document).width() > 600) {
       $('#nav-item-1').unbind('hover')
       $('#nav-item-2').unbind('hover')
       $('#nav-item-3').unbind('hover')

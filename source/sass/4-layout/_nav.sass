@@ -44,11 +44,17 @@
 
 
 .nav-item 
-  h2,h4
+  h2
+    display: inline
+    margin: 0px
+  h4
     display: inline
     margin: 0px
 
-
+.show-summary
+    display: none
+    @media only screen and (max-width: 600px)
+      display: inline
 
 .contact ul
   display: flex
@@ -58,7 +64,7 @@
   bottom: 0
 
 .nav-col-2
-  display: flex
+  display: block
   opacity: 0
   position: fixed
   top: 25%
@@ -67,10 +73,10 @@
   justify-content: center
   border-bottom: 3px solid black
   @media only screen and (max-width: 600px)
-    display: block
+    display: none
     opacity: 1 !important
     position: relative
-    margin-bottom: 60px
+    margin-bottom: 40px
   .container
     height: 400px
     width: 100%
