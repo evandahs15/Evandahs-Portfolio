@@ -7,18 +7,22 @@ $(function () {
   $('.animation-container').animate({display: 'none'}, 100)
 })
 
+
+
 // button to toggle navigation screen
 function showNav () {
-  $('.fullscreen-nav').animate({width: '100%'}, 1000, 'easeInOutSine')
-  $('.fullscreen-nav').css('padding', '25px 25px 25px 25px')
   $('.nav-wrapper').css('display', 'block')
+  $('.fullscreen-nav').animate({width: '100%'}, 600, 'easeInOutSine')
+  $('.fullscreen-nav').css('padding', '25px 25px 25px 25px')
 }
 
 function closeNav () {
-  $('.fullscreen-nav').animate({width: '3vw'}, 1000, 'easeInOutSine')
+  $('.fullscreen-nav').animate({width: '3vw'}, 600, 'easeInOutSine')
   $('.fullscreen-nav').css('padding', '0')
   $('.nav-wrapper').css('display', 'none')
 }
+
+// create a function that animates everything then place it in
 // function showNav () {
 //   var nav = document.getElementById('fullscreen-nav')
 //   if (nav.className === 'fullscreen-nav') {
