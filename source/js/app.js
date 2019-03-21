@@ -9,15 +9,16 @@ $(function () {
 
 // button to toggle navigation screen
 function showNav () {
-  $('.nav-wrapper').css('display', 'block')
+  $('.nav-wrapper').animate({width: 'toggle'})
   $('.fullscreen-nav').animate({width: '100%'}, 600, 'easeInOutSine')
   $('.fullscreen-nav').css('padding', '25px 25px 25px 25px')
+  $('.fullscreen-nav').prop('onclick', null)
 }
 
 function closeNav () {
   $('.fullscreen-nav').animate({width: '3vw'}, 600, 'easeInOutSine')
   $('.fullscreen-nav').css('padding', '0')
-  $('.nav-wrapper').css('display', 'none')
+  $('.nav-wrapper').animate({width: 'toggle'})
 }
 
 // button to expand content
@@ -95,7 +96,7 @@ $('#nav-item-4').hover(function () {
 
 $(document).ready(function () {
   function screen990 () {
-    if ($(document).width() > 600) {
+    if ($(document).width() > 800) {
       $('#nav-item-1').unbind('hover')
       $('#nav-item-2').unbind('hover')
       $('#nav-item-3').unbind('hover')
