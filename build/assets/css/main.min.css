@@ -237,13 +237,6 @@ input[type="button"] {
     transform: scale(1.01);
     transform: translateY(3px); }
 
-a {
-  color: #0074D9;
-  text-decoration: none;
-  outline: 0; }
-  a:hover, a:focus {
-    color: #F012BE; }
-
 ::selection {
   background: #FFF498; }
 
@@ -319,6 +312,19 @@ ul {
   list-style: none;
   padding-left: 0; }
 
+a {
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px; }
+  @media only screen and (max-device-width: 768px) and (orientation: portrait) {
+    a {
+      font-size: 16px; } }
+  @media only screen and (max-width: 320px) {
+    a {
+      font-size: 14px; } }
+  a:hover, a:focus {
+    color: white; }
+
 p {
   margin: 0 0 20px 0;
   font-size: 18px;
@@ -356,260 +362,69 @@ strong {
     .intro {
       font-size: 30px; } }
 
-.fullscreen-nav {
-  display: block;
-  left: 0;
-  height: 100vh;
-  width: 3vw;
-  background: #DEB880;
-  position: fixed;
-  z-index: 99; }
-  @media only screen and (max-width: 800px) {
-    .fullscreen-nav {
-      overflow: scroll;
-      min-height: 100vh;
-      height: 100%; } }
-  .fullscreen-nav .nav-wrapper {
-    display: none;
-    width: auto; }
-  .fullscreen-nav .close-nav {
-    display: none; }
-
-.nav-wrapper {
-  display: block;
-  width: auto;
-  height: 100%; }
-  @media only screen and (max-width: 800px) {
-    .nav-wrapper {
-      top: 0px;
-      bottom: 0px;
-      overflow-y: scroll;
-      overflow-x: hidden; } }
-  @media only screen and (max-width: 600px) {
-    .nav-wrapper {
-      height: 100%;
-      min-height: 100vh;
-      overflow-y: scroll;
-      overflow-x: hidden; } }
-  .nav-wrapper .nav-col-1 {
-    display: grid;
-    grid-template-rows: 20% 60%;
-    width: 100%;
-    height: 100%; }
-    @media only screen and (max-width: 800px) {
-      .nav-wrapper .nav-col-1 {
-        display: block;
-        min-height: 100vh;
-        height: auto; } }
-    @media only screen and (max-width: 600px) {
-      .nav-wrapper .nav-col-1 {
-        display: grid; } }
-    .nav-wrapper .nav-col-1 .nav-items-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      @media only screen and (max-width: 800px) {
-        .nav-wrapper .nav-col-1 .nav-items-wrapper {
-          display: flex;
-          min-height: 100%; } }
-      @media only screen and (max-width: 600px) {
-        .nav-wrapper .nav-col-1 .nav-items-wrapper {
-          display: block; } }
-  .nav-wrapper .close-nav {
-    display: block;
-    position: absolute;
-    top: 50px;
-    right: 60px; }
-
-@media only screen and (max-width: 600px) {
-  .nav-item {
-    margin-bottom: 40px;
-    margin-top: 40px; } }
-
-.nav-item h2 {
-  display: inline;
-  margin: 0px; }
-
-.nav-item h4 {
-  display: inline;
-  margin: 0px; }
-
-.show-summary {
-  display: none; }
-  @media only screen and (max-width: 800px) {
-    .show-summary {
-      display: inline; } }
-  @media only screen and (max-width: 600px) {
-    .show-summary {
-      display: inline; } }
-
-.contact {
-  display: flex;
-  align-items: flex-end; }
-  .contact ul {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between; }
-    .contact ul li {
-      text-decoration: underline; }
-
-.nav-col-2 {
-  width: 60%;
-  display: block;
-  opacity: 0;
-  position: fixed;
-  top: 28%;
-  right: 0px;
-  flex-direction: column;
-  justify-content: center;
-  border-bottom: 3px solid black; }
-  @media only screen and (max-width: 1050px) {
-    .nav-col-2 {
-      width: 50%; } }
-  @media only screen and (max-width: 800px) {
-    .nav-col-2 {
-      display: none;
-      opacity: 1 !important;
-      position: relative;
-      height: 400px;
-      width: 100%;
-      top: 0px;
-      border-bottom: 0px; } }
-  @media only screen and (max-width: 600px) {
-    .nav-col-2 {
-      display: none;
-      opacity: 1 !important;
-      position: relative;
-      margin-bottom: 40px; } }
-  .nav-col-2 .container {
-    height: auto;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    align-items: center; }
-    @media only screen and (max-width: 1050px) {
-      .nav-col-2 .container {
-        display: block;
-        width: auto;
-        padding-right: 50px; } }
-    @media only screen and (max-width: 800px) {
-      .nav-col-2 .container {
-        width: 60%;
-        position: absolute;
-        right: 0px !important;
-        border-bottom: 3px solid black; } }
-    @media only screen and (max-width: 600px) {
-      .nav-col-2 .container {
-        display: block;
-        height: auto;
-        height: auto;
-        width: 400px; } }
-    .nav-col-2 .container .summary {
-      padding-left: 40px;
-      padding-right: 40px; }
-      @media only screen and (max-width: 1050px) {
-        .nav-col-2 .container .summary {
-          display: flex;
-          flex-direction: row;
-          padding-left: 0px;
-          padding-right: 0px;
-          padding-top: 25px; } }
-    .nav-col-2 .container h2 {
-      margin-top: 0px;
-      font-size: 25px;
-      margin-bottom: 10px; }
-      @media only screen and (max-width: 600px) {
-        .nav-col-2 .container h2 {
-          margin-top: 40px; } }
-    @media only screen and (max-width: 1050px) {
-      .nav-col-2 .container p {
-        padding-right: 30px; } }
-    .nav-col-2 .container img {
-      width: 100%; }
-      @media only screen and (max-width: 600px) {
-        .nav-col-2 .container img {
-          width: 100vw; } }
-
 .animation-container {
   display: block;
   position: fixed;
   right: 0px;
-  height: 50%;
-  width: 60%; }
+  height: 50vh;
+  width: 65%; }
+  @media only screen and (max-device-width: 1100px) {
+    .animation-container {
+      width: 80%; } }
+  @media only screen and (max-device-width: 520px) {
+    .animation-container {
+      width: 90%; } }
+  @media only screen and (max-device-width: 450px) {
+    .animation-container {
+      height: 100vh; } }
 
 .about-title {
   position: absolute;
   width: 100%;
   right: -1000px;
-  bottom: 5px;
+  bottom: 13%;
   margin: 0; }
+  @media only screen and (max-device-width: 900px) {
+    .about-title {
+      font-size: 30px; } }
+  @media only screen and (max-device-width: 520px) {
+    .about-title {
+      font-size: 28px; } }
+  @media only screen and (max-device-width: 450px) {
+    .about-title {
+      font-size: 22px;
+      top: 5%; } }
 
 .border-line {
-  float: right;
   position: absolute;
-  bottom: 0px;
+  bottom: 10%;
   width: 100%;
   right: -1000px;
   padding: 2px;
   background: black; }
+  @media only screen and (max-device-width: 450px) {
+    .border-line {
+      display: none; } }
 
-#nav-item-1:hover h2, #nav-item-1:hover h4 {
-  color: #FDF973; }
-
-#nav-item-2:hover h2, #nav-item-2:hover h4 {
-  color: #F39A3E; }
-
-#nav-item-3:hover h2, #nav-item-3:hover h4 {
-  color: #CFFDFD; }
-
-#nav-item-4:hover h2, #nav-item-4:hover h4 {
-  color: #FAD293; }
-
-.show-summary {
-  margin-left: 10px; }
-
-#title {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  background: #FAD293;
-  border-bottom: 3px solid black;
-  margin-left: 13%;
-  padding-right: 40px;
-  z-index: 5;
-  right: 0;
-  left: 0;
-  top: 0;
-  height: 14vh; }
-  #title h1 {
-    padding: 10px 0px 10px 0px;
-    margin: 0px; }
-
-.project-description {
-  margin-top: 70px;
-  margin-bottom: 40px; }
-
-.about-project-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 50px;
-  align-items: start;
-  border-bottom: 3px solid black; }
-  .about-project-container li {
-    padding-bottom: 10px; }
-
-.project-body {
-  text-align: center; }
-  .project-body img {
-    width: 100%; }
-  .project-body p {
-    padding-top: 50px;
-    padding-bottom: 50px; }
+.links {
+  position: absolute;
+  width: 100%;
+  right: -1000px;
+  bottom: 0px;
+  margin: 0; }
+  @media only screen and (max-device-width: 450px) {
+    .links {
+      bottom: 5%; } }
+  .links a {
+    text-decoration: none;
+    padding-right: 45px; }
+    @media only screen and (max-device-width: 450px) {
+      .links a {
+        font-size: 40px;
+        display: block;
+        padding-bottom: 20px; } }
+    .links a a:hover {
+      color: white; }
 
 .flex-video {
   height: 0;

@@ -57,6 +57,19 @@ ul
 
 
 // Basic Text Style
+a
+  color: black
+  font-family: 'Work Sans', sans-serif
+  font-size: 18px
+  @media only screen and (max-device-width: 768px) and (orientation: portrait) 
+    font-size: 16px
+  @media only screen and (max-width: 320px)
+    font-size: 14px
+
+  &:hover,
+  &:focus
+    color: white
+
 
 p
   margin: 0 0 20px 0
