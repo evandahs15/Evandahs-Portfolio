@@ -1,2 +1,2 @@
 # Evandahs Portfolio
-A portfolio I am building showcasing all my design work
+This is my new repo that contains all my portfolio work.
