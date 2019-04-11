@@ -1,4 +1,11 @@
+#wrapper
+  @include transition(left 0.5s ease)
+  left: 0
+  &.expanded
+    left: 16%
+    
 #title
+  @include transition(left 0.5s ease)
   box-sizing: border-box
   display: flex
   justify-content: space-between
@@ -13,6 +20,8 @@
   left: 0
   top: 0
   height: 14vh
+  &.expanded
+    left: 16%
 
   h1 
     padding: 10px 0px 10px 0px

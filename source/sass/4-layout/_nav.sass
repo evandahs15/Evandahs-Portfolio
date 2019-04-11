@@ -1,15 +1,13 @@
 .fullscreen-nav
-  display: flex
-  flex-direction: column
-  justify-content: space-between
+  @include transition(left 0.5s ease)
   box-sizing: border-box
-  background-color: #EF8100
+  background-color: $darkBrown
   margin-top: 0
   position: fixed
-  left: 0
+  left: -$nav-width
   top: 0
   bottom: 0
-  width: 23%
+  width: 25%
   height: 100%
   padding: 20px
   float: left
@@ -17,6 +15,55 @@
   /* overflow is incase the screen has shrunken on the Y axis - the user can scroll down through the sidebar*/
   overflow-y: auto
   overflow-x: hidden
+  &.expanded
+    left: 0
+  
+.nav-container
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+
+.nav-toggle 
+	@include user-select;
+	cursor: pointer
+	height: 5 * $nav-toggle-bar-height
+	right: 2rem
+	position: fixed
+	top: 2rem
+	width: $nav-toggle-bar-width
+	z-index: $z-nav-toggle
+	&:hover  
+    opacity: 0.8 
+
+	.nav-toggle-bar,
+	.nav-toggle-bar::after,
+	.nav-toggle-bar::before 
+		@include center-vertically
+		@include transition(all 0.5s ease)
+		background: $darkBrown
+		content: ''
+		height: $nav-toggle-bar-height
+		width: 100%
+	
+	.nav-toggle-bar  
+    margin-top: 0 
+	.nav-toggle-bar::after  
+    margin-top: 2 * $nav-toggle-bar-height 
+	.nav-toggle-bar::before  
+    margin-top: -2 * $nav-toggle-bar-height 
+	&.expanded .nav-toggle-bar  
+    background: transparent 
+	&.expanded .nav-toggle-bar::after,
+	&.expanded .nav-toggle-bar::before 
+		background: $nav-color
+		margin-top: 0
+	
+	&.expanded .nav-toggle-bar::after  
+    @include transform(rotate(45deg)) 
+	&.expanded .nav-toggle-bar::before  
+    @include transform(rotate(-45deg)) 
 
   
   

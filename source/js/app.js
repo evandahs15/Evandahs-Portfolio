@@ -1,19 +1,28 @@
 // JavaScript
-window.sr = ScrollReveal() 
+// window.sr = ScrollReveal()
 
 // sr.reveal('h1', {
 //     delay: 0,
 //     duration: 200,
 //     origin: 'bottom',
-//     distance: '100px' 
+//     distance: '100px'
 // });
 
-function showNav () {
-  console.log('this is working')
-  var x = document.getElementById('fullscreen-nav')
-  if (x.className === 'fullscreen-nav') {
-    x.className += ' unfold'
-  } else {
-    x.className = 'fullscreen-nav'
+(function () {
+  var hamburger = {
+    navToggle: document.querySelector('.nav-toggle'),
+    nav: document.querySelector('.fullscreen-nav'),
+    content: document.querySelector('#wrapper'),
+    title: document.querySelector('#title'),
+
+    doToggle: function (e) {
+      e.preventDefault()
+      this.navToggle.classList.toggle('expanded')
+      this.nav.classList.toggle('expanded')
+      this.content.classList.toggle('expanded')
+      this.title.classList.toggle('expanded')
+    }
   }
-}
+
+  hamburger.navToggle.addEventListener('click', function (e) { hamburger.doToggle(e) })
+}())
