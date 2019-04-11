@@ -361,39 +361,25 @@ strong {
     .intro {
       font-size: 30px; } }
 
-.nav-toggle {
-  background-color: #fff; }
-
 .fullscreen-nav {
-  display: block;
-  left: 0;
-  height: 100vh;
-  width: 3vw;
-  background: #DEB880;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #EF8100;
+  margin-top: 0;
   position: fixed;
-  z-index: 99; }
-  .fullscreen-nav .nav-container {
-    display: none; }
-
-.fullscreen-nav.unfold {
-  padding: 25px;
-  width: 100%; }
-  .fullscreen-nav.unfold .nav-container {
-    display: grid;
-    grid-template-rows: 60px 240px 60px 150px;
-    align-content: space-between;
-    width: 320px;
-    height: 100vh; }
-  .fullscreen-nav.unfold h2 {
-    margin: 0px;
-    margin-bottom: 40px; }
-  .fullscreen-nav.unfold h4 {
-    margin: 0px; }
-  .fullscreen-nav.unfold li {
-    padding-bottom: 10px; }
-
-.nav-item:hover h2, .nav-item:hover h4 {
-  color: white; }
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 23%;
+  height: 100%;
+  padding: 20px;
+  float: left;
+  z-index: 99;
+  /* overflow is incase the screen has shrunken on the Y axis - the user can scroll down through the sidebar*/
+  overflow-y: auto;
+  overflow-x: hidden; }
 
 #title {
   box-sizing: border-box;

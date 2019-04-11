@@ -1,38 +1,63 @@
-.nav-toggle
-  background-color: #fff
-
 .fullscreen-nav
-  display: block
-  left: 0
-  height: 100vh
-  width: 3vw
-  background: $darkBrown
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  box-sizing: border-box
+  background-color: #EF8100
+  margin-top: 0
   position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  width: 23%
+  height: 100%
+  padding: 20px
+  float: left
   z-index: 99
-  .nav-container
-    display: none
+  /* overflow is incase the screen has shrunken on the Y axis - the user can scroll down through the sidebar*/
+  overflow-y: auto
+  overflow-x: hidden
+
+  
+  
+  
+// .nav-toggle
+//   background-color: #fff
+
+// .fullscreen-nav
+//   display: block
+//   left: 0
+//   height: 100vh
+//   width: 3vw
+//   background: $darkBrown
+//   position: fixed
+//   z-index: 99
+//   .nav-container
+//     display: block
+//     @media only screen and (max-device-width: 520px) and (orientation: portrait)
+//      display: none
 
 
-.fullscreen-nav.unfold
-  padding: 25px
-  width: 100%
-  .nav-container
-    display: grid
-    grid-template-rows: 60px 240px 60px 150px
-    align-content: space-between
-    width: 320px
-    height: 100vh
-  h2
-    margin: 0px
-    margin-bottom: 40px
-  h4 
-    margin: 0px
-  li
-    padding-bottom: 10px
+// .fullscreen-nav.unfold
+//   padding: 25px
+//   width: 40%
+//   .nav-container
+//     display: grid
+//     grid-template-rows: 60px 240px 60px 150px
+//     align-content: space-between
+//     width: 320px
+//     height: 100vh
+//   h2
+//     margin: 0px
+//     margin-bottom: 40px
+//   h4 
+//     margin: 0px
+//   li
+//     padding-bottom: 10px
 
-.nav-item:hover
-  h2, h4
-    color: white
+// .nav-item:hover
+//   h2, h4
+//     color: white
 
 
 
