@@ -390,6 +390,11 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  .nav-container h2, .nav-container h4 {
+    margin: 0px; }
+
+.nav-item {
+  margin-bottom: 25px; }
 
 .nav-toggle {
   -webkit-user-select: none;
