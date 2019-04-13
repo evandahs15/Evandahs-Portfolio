@@ -25,4 +25,5 @@
   }
 
   hamburger.navToggle.addEventListener('click', function (e) { hamburger.doToggle(e) })
+  hamburger.nav.addEventListener('click', function (e) { hamburger.doToggle(e) })
 }())
