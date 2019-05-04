@@ -8,7 +8,6 @@ window.sr = ScrollReveal()
 //     distance: '100px'
 // });
 
-// ShowNav
 function showNav () {
   console.log('this is working')
   var x = document.getElementById('fullscreen-nav')
@@ -19,37 +18,37 @@ function showNav () {
   }
 }
 
-// Hover in nav
-// Hover for village in nav
-document.getElementById('nav-item-1').onmouseover = function () {
-  document.getElementById('village-nav-summary').style.display = 'grid'
-}
-document.getElementById('nav-item-1').onmouseout = function () {
-  document.getElementById('village-nav-summary').style.display = 'none'
-}
-// Hover for summerfest in nav
-document.getElementById('nav-item-2').onmouseover = function () {
-  document.getElementById('summerFest-nav-summary').style.display = 'grid'
-}
-document.getElementById('nav-item-2').onmouseout = function () {
-  document.getElementById('summerFest-nav-summary').style.display = 'none'
-}
-// Hover for poolside in nav
-document.getElementById('nav-item-3').onmouseover = function () {
-  document.getElementById('poolside-nav-summary').style.display = 'grid'
-}
-document.getElementById('nav-item-3').onmouseout = function () {
-  document.getElementById('poolside-nav-summary').style.display = 'none'
-}
-// Hover for about me in nav
-document.getElementById('nav-item-4').onmouseover = function () {
-  document.getElementById('about-nav-summary').style.display = 'grid'
-}
-document.getElementById('nav-item-4').onmouseout = function () {
-  document.getElementById('about-nav-summary').style.display = 'none'
-}
 // create a function when you click the nav-link,
 // 1. prevent default
 // 2. menu close
 // 3. soft transition to the new page
 
+// function showNav () {
+//   console.log('this is working')
+//   // $(this).toggleClass('smart-close');
+//   if (!menuOpen) {
+//     menuOpen = true
+//     $('#sidebar').animate({left: 0}, 300)
+//     $('#sidebar').addClass('sidebar-open')
+//     $('#content, .site-title').animate({
+//       opacity: 0.1
+//     }, 300)
+
+//     $('#content').click(function () {
+//       menuOpen = false
+//       event.preventDefault()
+//       $('#menu-smart').removeClass('smart-close')
+//       $('#sidebar').removeClass('sidebar-open')
+//       $('#content, .site-title').animate({
+//         opacity: 1
+//       }, 300)
+//     })
+//   } else {
+//     menuOpen = false
+//     $('#sidebar').animate({left: '-13.25em'}, 300)
+//     $('#sidebar').removeClass('sidebar-open')
+//     $('#content, .site-title').animate({
+//       opacity: 1
+//     }, 300)
+//   }
+// }

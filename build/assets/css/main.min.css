@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -193,7 +193,7 @@ body {
   height: 100%;
   overflow: hidden;
   margin: 0;
-  background-color: #FAD293;
+  background-color: white;
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -238,11 +238,11 @@ input[type="button"] {
     transform: translateY(3px); }
 
 a {
-  color: #0074D9;
+  color: #5400DA;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #F012BE; }
+    text-decoration: underline; }
 
 ::selection {
   background: #FFF498; }
@@ -259,36 +259,45 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #FFF498; }
 
-.bigger, .big, .medium,
+@font-face {
+  font-family: 'Amerigo BT bold';
+  src: url("../fonts/amerigo_bold_bt-webfont") format("embedded-opentype");
+  src: url("../fonts/amerigo_bold_bt-webfont.eot?#iefix") format("eot"), url("../fonts/amerigo_bold_bt-webfont.woff") format("woff"), url("../fonts/amerigo_bold_bt-webfont.woff2") format("woff2"), url("../fonts/amerigo_bold_bt-webfont.ttf") format("truetype"), url("../fonts/amerigo_bold_bt-webfont.svg#amerigo_btbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 h1, h2, h3 {
-  color: black;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 600; }
+  color: #5400DA;
+  font-family: 'Amerigo BT bold', 'Work Sans', sans-serif;
+  font-weight: 700; }
 
-p, h4 {
-  color: black;
+p, h4, span {
+  color: #5400DA;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0px; }
 
-.bigger, h1 {
-  font-size: 80px;
-  letter-spacing: 0px; }
+.large {
+  font-size: 75px; }
+
+.bigger {
+  font-size: 60px;
+  line-height: 76px; }
   @media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    .bigger, h1 {
+    .bigger {
       font-size: 50px; } }
   @media only screen and (max-width: 320px) {
-    .bigger, h1 {
+    .bigger {
       font-size: 40px; } }
 
-.big, h2 {
+.big {
   font-size: 40px;
   letter-spacing: 0px; }
   @media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    .big, h2 {
+    .big {
       font-size: 25px; } }
   @media only screen and (max-width: 320px) {
-    .big, h2 {
+    .big {
       font-size: 20px; } }
 
 .medium, h3 {
@@ -337,10 +346,11 @@ strong {
   font-weight: 600; }
 
 .name {
+  font-family: 'Amerigo BT bold', 'Work Sans', sans-serif;
   transform: rotate(-270deg);
   font-weight: 300;
   font-size: 30px;
-  color: #000000;
+  color: #5400DA;
   letter-spacing: 0; }
   @media only screen and (max-width: 320px) {
     .name {
@@ -356,25 +366,24 @@ strong {
     .intro {
       font-size: 30px; } }
 
+.headerfont {
+  font-family: 'Amerigo BT bold', 'Work Sans', sans-serif;
+  color: #5400DA; }
+
 .fullscreen-nav {
   display: block;
   left: 0;
   height: 100vh;
   width: 3vw;
-  background: #DEB880;
+  background: #7EE0D5;
   position: fixed;
   z-index: 99; }
-  .fullscreen-nav .nav-wrapper {
-    display: none; }
-  .fullscreen-nav .close-nav {
+  .fullscreen-nav .nav-col-1 {
     display: none; }
 
 .fullscreen-nav.unfold {
   padding: 25px 0px 25px 25px;
-  width: 100%; }
-  .fullscreen-nav.unfold .nav-wrapper {
-    display: grid;
-    grid-template-columns: 420px auto; }
+  width: 25%; }
   .fullscreen-nav.unfold .nav-col-1 {
     display: grid;
     grid-template-rows: 60px 240px 60px 150px;
@@ -384,8 +393,6 @@ strong {
   .fullscreen-nav.unfold h2 {
     margin: 0px;
     margin-bottom: 40px; }
-  .fullscreen-nav.unfold h4 {
-    margin: 0px; }
   .fullscreen-nav.unfold li {
     padding-bottom: 10px; }
   .fullscreen-nav.unfold .close-nav {
@@ -393,33 +400,6 @@ strong {
     position: absolute;
     top: 50px;
     right: 60px; }
-  .fullscreen-nav.unfold .nav-col-2 {
-    display: grid;
-    align-content: center; }
-  .fullscreen-nav.unfold .container {
-    height: 400px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 600px 300px;
-    border-bottom: 3px solid black; }
-    .fullscreen-nav.unfold .container .summary {
-      padding-left: 40px; }
-    .fullscreen-nav.unfold .container h2 {
-      margin-bottom: 10px; }
-    .fullscreen-nav.unfold .container img {
-      width: 100%; }
-
-#nav-item-1:hover h2, #nav-item-1:hover h4 {
-  color: #FDF973; }
-
-#nav-item-2:hover h2, #nav-item-2:hover h4 {
-  color: #F39A3E; }
-
-#nav-item-3:hover h2, #nav-item-3:hover h4 {
-  color: #CFFDFD; }
-
-#nav-item-4:hover h2, #nav-item-4:hover h4 {
-  color: #FAD293; }
 
 #title {
   box-sizing: border-box;
@@ -427,8 +407,8 @@ strong {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background: #FAD293;
-  border-bottom: 3px solid black;
+  background: #fff;
+  border-bottom: 3px solid #5400DA;
   margin-left: 13%;
   padding-right: 40px;
   z-index: 5;
@@ -440,20 +420,12 @@ strong {
     padding: 10px 0px 10px 0px;
     margin: 0px; }
 
-.project-description {
+.home-wrapper {
   margin-top: 70px;
   margin-bottom: 40px; }
 
-.about-project-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 50px;
-  align-items: start;
-  border-bottom: 3px solid black; }
-  .about-project-container li {
-    padding-bottom: 10px; }
+.home-intro {
+  height: 100vh; }
 
 .project-body {
   text-align: center; }
@@ -462,6 +434,142 @@ strong {
   .project-body p {
     padding-top: 50px;
     padding-bottom: 50px; }
+
+.project-tile {
+  position: relative;
+  height: 330px;
+  width: 100%;
+  text-align: left;
+  margin-top: 100px; }
+
+.link {
+  clear: right;
+  float: left;
+  margin: 25px 0;
+  padding: 35px 0;
+  position: relative;
+  font-family: 'Work Sans';
+  font-size: 63px;
+  letter-spacing: -2.5px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  transform: scale(0.8, 0.8);
+  transform-origin: left;
+  transition: all 0.2s ease; }
+  .link span {
+    display: block;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -1.1px;
+    margin-top: 55px; }
+
+.project-background-image {
+  width: 760px;
+  height: 90%;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  filter: grayscale(1);
+  opacity: .2;
+  transition: all 0.2s ease; }
+
+.section-header {
+  display: block; }
+
+#projects {
+  display: block;
+  width: 100%; }
+
+.project-link:hover .project-background-image {
+  opacity: .95;
+  filter: grayscale(0); }
+
+.project-link:hover .link {
+  transform: scale(0.85, 0.85);
+  transform-origin: left; }
+
+#spotless {
+  background-image: url(../img/spotless-hero-image.png); }
+
+#village {
+  background-image: url(../img/village-hero-image.png); }
+
+#summerfest {
+  background-image: url(../img/summerfest-hero-image.png); }
+
+#graveyard {
+  background-image: url(../img/graveyard-hero-image.png); }
+
+#about {
+  margin-top: 150px;
+  display: block;
+  width: 100%; }
+
+.about-intro {
+  display: block;
+  margin-top: 70px;
+  margin-bottom: 50px; }
+  .about-intro p {
+    margin: 0px;
+    font-size: 42px;
+    letter-spacing: -1.2px;
+    line-height: 50px; }
+
+.col-1 {
+  display: block;
+  float: left;
+  width: 50%;
+  padding-right: 50px; }
+  .col-1 p {
+    margin: 0px;
+    font-size: 25px;
+    line-height: 29px; }
+
+.col-2 {
+  display: block;
+  float: left;
+  width: 50%;
+  padding-right: 50px; }
+  .col-2 p {
+    margin: 0px;
+    font-size: 25px;
+    line-height: 29px; }
+
+#recognition {
+  padding-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.profile-image {
+  width: 348px;
+  height: auto;
+  margin-right: 90px; }
+
+.recognition-description h1 {
+  margin: 0px;
+  margin-bottom: 45px;
+  font-size: 42px;
+  letter-spacing: -1.2px;
+  line-height: 50px; }
+
+.recognition-description ul {
+  margin-bottom: 100px; }
+  .recognition-description ul li {
+    padding-bottom: 15px; }
+    .recognition-description ul li a {
+      font-size: 25px;
+      color: #5400DA;
+      line-height: 29px; }
+
+.recognition-description span {
+  text-decoration: underline;
+  font-size: 25px;
+  color: #5400DA;
+  line-height: 34px; }
+
+.spacer {
+  height: 20vh; }
 
 .flex-video {
   height: 0;
