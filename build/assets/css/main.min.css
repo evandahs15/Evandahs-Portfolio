@@ -678,3 +678,27 @@ p, li, a {
   bottom: 93px;
   margin-top: 19%;
   z-index: 90; }
+
+.other-projects-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px; }
+
+#next-project {
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 30px; }
+  #next-project h3 {
+    display: block;
+    margin: 0px; }
+  #next-project p {
+    display: block;
+    text-decoration: underline;
+    margin: 0px; }
+
+.right {
+  text-align: left; }
+
+.left {
+  text-align: right; }
