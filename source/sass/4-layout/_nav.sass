@@ -1,33 +1,19 @@
-.fullscreen-nav
+
+.sidebar
   transition: all 0.2s ease
   display: block
-  left: 0
+  left: -25%
   height: 100vh
-  width: 50px
+  width: 30%
   background: white
   border-right: 3px solid $blue
   position: fixed
   z-index: 99
-  .nav-col-1
-     display: none
-
-.close-nav
-  display: block
-  position: absolute
-  top: 50%
-  right: 10px
-
-.fullscreen-nav:hover
-  background-image: url(../img/bg.png)
-  background-repeat: repeat-y
-
-
-
-
-.fullscreen-nav.unfold
   padding: 30px
   width: 29%
+  transition: all 0.3s
   .nav-col-1
+    opacity: 0
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -39,6 +25,32 @@
     font-weight: 400
   li
     padding-bottom: 10px
+
+
+.sidebar-open
+  background-image: none
+  background-repeat: none
+  left: 0!important
+  .nav-col-1
+    opacity: 1
+
+.close-nav
+  opacity: 1
+  display: block
+  position: absolute
+  top: 50%
+  right: 10px
+  transition: all 0.3s
+
+.sidebar:hover
+  background-image: url(../img/bg.png)
+  background-repeat: repeat-y
+
+.smart-close
+  opacity: 0
+
+
+
 
 
 
