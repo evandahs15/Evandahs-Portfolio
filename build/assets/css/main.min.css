@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -262,116 +262,48 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #FFF498; }
 
-@font-face {
-  font-family: 'Amerigo BT bold';
-  src: url("../fonts/amerigo_bold_bt-webfont") format("embedded-opentype");
-  src: url("../fonts/amerigo_bold_bt-webfont.eot?#iefix") format("eot"), url("../fonts/amerigo_bold_bt-webfont.woff") format("woff"), url("../fonts/amerigo_bold_bt-webfont.woff2") format("woff2"), url("../fonts/amerigo_bold_bt-webfont.ttf") format("truetype"), url("../fonts/amerigo_bold_bt-webfont.svg#amerigo_btbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-h1, h2, h3 {
+h1 {
   color: #5400DA;
-  font-family: 'Amerigo BT bold', 'Work Sans', sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: 700; }
 
 p, h4, span {
   color: #5400DA;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   letter-spacing: 0px; }
 
 .large {
-  font-size: 75px; }
+  font-size: 65px;
+  letter-spacing: 0px; }
 
 .bigger {
-  font-size: 60px;
-  line-height: 76px; }
-  @media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    .bigger {
-      font-size: 50px; } }
-  @media only screen and (max-width: 320px) {
-    .bigger {
-      font-size: 40px; } }
+  font-size: 55px;
+  letter-spacing: 0px; }
 
 .big {
-  font-size: 40px;
+  font-size: 42px;
   letter-spacing: 0px; }
-  @media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    .big {
-      font-size: 25px; } }
-  @media only screen and (max-width: 320px) {
-    .big {
-      font-size: 20px; } }
 
-.medium, h3 {
-  font-size: 18px;
+.medium {
+  font-size: 30px;
+  font-weight: 400;
   letter-spacing: 0px; }
-  @media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    .medium, h3 {
-      font-size: 16px; } }
-  @media only screen and (max-width: 320px) {
-    .medium, h3 {
-      font-size: 12px; } }
 
-.sub-headig, h2 {
-  font-weight: 300;
-  font-size: 40px;
+.small {
+  font-size: 20px;
   letter-spacing: 0; }
-
-.small, h4 {
-  font-size: 14px;
-  letter-spacing: 0; }
-  @media only screen and (max-width: 320px) {
-    .small, h4 {
-      font-size: 18px; } }
 
 ul {
   margin-top: 4px;
-  font-weight: 300;
+  font-weight: 400;
   list-style: none;
   padding-left: 0; }
 
 p {
   margin: 0 0 20px 0;
-  font-size: 18px;
-  line-height: 22px; }
-  @media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    p {
-      font-size: 16px; } }
-  @media only screen and (max-width: 320px) {
-    p {
-      font-size: 14px; } }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: 600; }
-
-.name {
-  font-family: 'Amerigo BT bold', 'Work Sans', sans-serif;
-  transform: rotate(-270deg);
-  font-weight: 300;
   font-size: 30px;
-  color: #5400DA;
   letter-spacing: 0; }
-  @media only screen and (max-width: 320px) {
-    .name {
-      font-size: 18px; } }
-
-.intro {
-  font-size: 45px;
-  letter-spacing: 0; }
-  @media only screen and (max-device-width: 768px) and (orientation: portrait) {
-    .intro {
-      font-size: 30px; } }
-  @media only screen and (max-width: 320px) {
-    .intro {
-      font-size: 30px; } }
-
-.headerfont {
-  font-family: 'Amerigo BT bold', 'Work Sans', sans-serif;
-  color: #5400DA; }
 
 .fullscreen-nav {
   display: block;
@@ -428,12 +360,35 @@ strong {
     padding: 10px 0px 10px 0px;
     margin: 0px; }
 
-.home-wrapper {
-  margin-top: 70px;
-  margin-bottom: 40px; }
+.name {
+  font-family: 'Merriweather', serif;
+  transform: rotate(-270deg);
+  font-weight: 400;
+  font-size: 30px;
+  color: #5400DA;
+  letter-spacing: 0; }
 
-.home-intro {
-  height: 80vh; }
+#wrapper {
+  display: block;
+  position: absolute;
+  overflow: scroll;
+  width: auto;
+  height: auto;
+  padding: 0px 13% 0px 13%;
+  margin-top: 14vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  scroll-behavior: smooth; }
+
+#content {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  bottom: 0; }
+
+#primary {
+  height: auto; }
 
 .project-body {
   text-align: center; }
@@ -645,28 +600,6 @@ strong {
   width: 100%;
   left: 0; }
 
-#wrapper {
-  display: block;
-  position: absolute;
-  overflow: scroll;
-  width: auto;
-  height: auto;
-  padding: 0px 13% 0px 13%;
-  margin-top: 14vh;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  scroll-behavior: smooth; }
-
-#content {
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  bottom: 0; }
-
-#primary {
-  height: auto; }
-
 #scrollbarWrapper {
   position: fixed;
   height: auto;
@@ -689,3 +622,36 @@ strong {
   height: 50px;
   position: absolute;
   bottom: 0; }
+
+.home-wrapper {
+  margin-top: 70px;
+  margin-bottom: 40px; }
+
+.home-intro {
+  height: 80vh;
+  padding-top: 10%; }
+
+#welcome-intro {
+  display: block;
+  width: 100%;
+  padding-bottom: 35px;
+  border-bottom: 3px solid #5400DA; }
+
+#view-work {
+  margin-top: 35px;
+  display: block;
+  right: 0px;
+  position: relative;
+  text-align: right; }
+  #view-work h1 {
+    text-decoration: underline; }
+
+#home-scrollbar {
+  position: fixed;
+  height: auto;
+  width: 50px;
+  top: 150px;
+  right: 50px;
+  bottom: 50px;
+  margin-top: 19%;
+  z-index: 90; }
