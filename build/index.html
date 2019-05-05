@@ -9,54 +9,59 @@
       </style>
 </head>
     <nav>
-    <div id="fullscreen-nav" class="fullscreen-nav unfold">
-      <div class="nav-wrapper">
+    <div id="sidebar" class="sidebar">
         <div class="nav-col-1">
             <div>
               <p>Hello, my name is Evandah.<br>
-                  Im an UI/UX designer and<br>
-                  Full stack developer.</p>
+                  I'm a UI/UX designer and<br>
+                  front end developer.</p>
             </div>
             <div>
-              <div id="nav-item-1" class="nav-item">
-                <a href="#">
-                  <h2>Home</h2>
+                <a href="index.html" id="anchor1" class="nav-item" >
+                  <h2 class="big">Home</h2>
                 </a>
-              </div>
-              <div id="nav-item-2" class="nav-item">
-                  <a href="#">
-                    <h2>Projects</h2>
+                <a href="#projects" id="anchor2" class="nav-item">
+                    <h2 class="big">Projects</h2>
                 </a>
-                </div>
-                <div id="nav-item-3">
-                    <a href="#" class="nav-item">
-                      <h2>About Me</h2>
-                    </a>
-                </div>
-            </div>
-            <div id="nav-item-4" class="nav-item">
-                <a href="#">
-                  <h2>Contact</h2>
-                </a>
+                 <a href="#about-me" id="anchor3" class="nav-item">
+                      <h2 class="big">About Me</h2>
+                  </a>
+                <a href="#contact-section" id="anchor4" class="nav-item">
+                    <h2 class="big">Contact</h2>
+                  </a>
             </div>
             <div id="contact">
                 <ul>
                   <li>+6421 244 2234</li>
-                  <li><a href="#">Linkden</a> // <a href="#">Behance</a></li>
+                  <li><a href="https://www.linkedin.com/in/evandah-steadman-810a3ab3/" class="underline">Linkden</a> // <a href="https://www.behance.net/vandahs8361" class="underline">Behance</a></li>
                   <li>Vandahs@outlook.com</li>
                 </ul>
             </div>
         </div>
-      <div class="close-nav">
+      <div id="side-menu-button" class="close-nav">
         <a href="javascript:void(0);" onclick="showNav()"> 
-          <svg width="18" height="19" xmlns="http://www.w3.org/2000/svg"><text transform="translate(-1355 -65)" fill-rule="evenodd" font-family="WorkSans-Light, Work Sans Light" font-size="37"><tspan x="1355" y="84">x</tspan></text></svg>
+            <svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+              <title>Group 2 Copy</title>
+              <desc>Created with Sketch.</desc>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Artboard-Copy-35" transform="translate(-16.000000, -500.000000)" fill="#5400DA">
+                      <g id="Group-2-Copy" transform="translate(25.000000, 510.000000) rotate(90.000000) translate(-25.000000, -510.000000) translate(15.000000, 502.000000)">
+                          <g id="Group" transform="translate(0.000000, 0.500000)">
+                              <rect id="Rectangle" x="0" y="14" width="20" height="2"></rect>
+                              <rect id="Rectangle-Copy" x="0" y="7" width="20" height="2"></rect>
+                              <rect id="Rectangle-Copy-2" x="0" y="0" width="20" height="2"></rect>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </svg>
         </a>
       </div>
       </div>
-     
 </nav>
 <div id="wrapper">
-    <div id="scrollbarWrapper">
+    <div id="home-scrollbar">
         <div id="scrollbar">
         <div id="scrollStyle">
           <p class="name">
@@ -69,27 +74,146 @@
       <div id= primary>
           <section id="header">
             <div id="title">
-                <h1> Evandah Steadman </h1>
-                <div class="nav-toggle">
+                <h1 class="huge"> Evandah Steadman </h1>
+                <div id="nav-toggle">
                     <a href="javascript:void(0);" onclick="showNav()">
                       <svg width="79" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M60 15h19v2H60zm0-7h19v2H60zm0-7h19v2H60z" fill="#000"/><text font-family="WorkSans-Light, Work Sans Light" font-size="25" letter-spacing="1" fill="#C09E6C" transform="translate(-2 -6)"><tspan x=".25" y="23">HO</tspan> <tspan x="38.45" y="23">M</tspan></text></g></svg>
                     </a>
                 </div>
             </div>
           </section>
-        <article class="project-description">
-            <div class="about-project-container">
-              <div>
-                <p>
-                  Hello, I am a creative UI/UX designer and Full stack developer. I am passionate about transalting product visions into beautiful designs to reach market.  
-                 </p>
+        <article class="home-wrapper">
+            <div class="home-intro">
+                <p id="welcome-intro" class="big">
+                    “Noun [ Eh-van-der, Steed-mahn]<br>
+                     A creative UI/UX designer and front-end <br>
+                     developer with a passion for translating <br>
+                     product visions into beautiful designs.”            
+                  </p>
+                  <div id="view-work">
+                    <a href="#projects" id="anchor1">
+                      <h1 class="medium">View Work</h1>
+                    </a>
+                    <p class="small">A portfolio of design, code,<br> 
+                      and other happy endings</p>
+                  </div>
               </div>
-            </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro fuga temporibus harum distinctio ab error nulla molestias deserunt. Iusto numquam id voluptatum placeat voluptatibus corrupti autem eum qui reprehenderit hic architecto consectetur enim, nostrum rem iure dicta tempore? Repellat, perferendis! Nisi, hic, ratione quasi aperiam, delectus nulla facilis aspernatur adipisci laborum maxime itaque voluptate. Eos quasi sunt dignissimos? Dicta explicabo natus atque tempore, ab quisquam, perferendis nihil nesciunt cumque ut magni. Labore, maxime nam, sapiente modi totam libero facilis delectus reprehenderit repellat tempora tempore debitis repudiandae. Voluptatibus illo distinctio repudiandae minus reiciendis reprehenderit, ipsa, cupiditate natus explicabo, ipsum eos voluptate iure? Similique praesentium sint beatae quaerat inventore libero hic iure, vero, iusto officiis, commodi quibusdam! Magnam sint voluptates eaque, eligendi quam, quisquam tempore perferendis nostrum, quibusdam odio molestiae. Similique sed est accusantium perferendis quisquam asperiores aspernatur deleniti quo quibusdam veritatis, hic consectetur consequatur minus placeat esse sapiente, debitis veniam corrupti, vero harum dolorem! Quia corporis ullam voluptates reiciendis atque sit non. Quod iusto enim officia corporis natus labore explicabo! Nulla error voluptatibus dolore sapiente fuga mollitia. Accusamus exercitationem recusandae maiores fugiat nobis cumque enim possimus veritatis voluptas accusantium a tenetur nihil quos earum dignissimos aperiam, explicabo aut vel libero repellat reprehenderit placeat hic. Tempore itaque, tempora earum in ipsa inventore laboriosam natus vero architecto beatae esse quas aspernatur repudiandae qui error velit sequi pariatur veniam blanditiis voluptatibus corrupti nesciunt! Illum tenetur officiis veritatis quidem blanditiis, vel iusto facere unde cumque explicabo maxime nemo ipsam itaque dolorum eos excepturi omnis doloremque odit! Temporibus ullam blanditiis deleniti, minima ipsam necessitatibus nam numquam dicta cupiditate! Optio, reiciendis dolore. Laborum eos harum officiis dicta quaerat, quo amet enim dolorum alias architecto nesciunt accusamus vitae iusto accusantium numquam unde modi beatae commodi voluptatem dolore. Vel nesciunt culpa neque quaerat nisi aliquid alias, cupiditate libero modi aspernatur possimus, numquam voluptatum sed ad voluptas ullam dolore. Natus nesciunt excepturi quia possimus voluptatum illum distinctio praesentium vel alias quibusdam culpa asperiores explicabo, quisquam quo cum nam nisi architecto neque itaque nobis, maiores accusamus sunt ipsa? Corrupti iste maiores mollitia consectetur eius, est recusandae expedita atque saepe temporibus natus nesciunt, officia totam deserunt voluptatibus quia dicta voluptatem. Tempora quibusdam, illo doloribus animi perspiciatis alias facere recusandae quod at soluta rem tempore, tenetur autem eius praesentium delectus minima voluptas temporibus magni libero. Hic voluptates exercitationem dicta eligendi suscipit explicabo, illum quos doloribus optio facilis nostrum, dignissimos ipsum in repellendus saepe repellat cum rerum sint quod, neque tempore! Cupiditate, explicabo omnis hic dicta at ad quisquam suscipit, quis facere, beatae eaque rem sit quasi officia non! At ab velit voluptates eaque? Atque similique ratione dolor repudiandae impedit autem repellat, quisquam possimus dolorem accusamus doloribus at incidunt fugiat voluptas soluta ipsam est dicta beatae totam non repellendus quasi odit quam expedita? Vero ad dolores minima quisquam soluta repudiandae unde, maxime id in ab nemo neque vel sunt earum, tempora numquam. Corrupti adipisci vel sunt magnam saepe aspernatur magni, voluptatum deleniti repellendus mollitia voluptate blanditiis doloribus ex praesentium repellat neque vero temporibus voluptatem inventore voluptas eveniet optio placeat cumque suscipit. Neque vero doloribus, consectetur autem eveniet in. Harum ea </p>
+              <section id="projects"> <a name="projects" id="anchor2"></a>
+                <h1 class="section-header large">Projects</h1>
+                <div>
+                  <a href="./Spotless.html" class="no-underline project-link">
+                  <div class="project-frame">
+                      <div class="frame-col-1">
+                            <h1 class="project-header bigger">Spotless</h1>
+                          <p>UI/UX and Branding
+                            for executive cleaning
+                            website and app. </p>
+                      </div>
+                        <div id="spotless" class="project-image"></div>
+                    </div>
+                </a>
+                <a href="#" class="no-underline project-link">
+                    <div class="project-frame">
+                        <div class="frame-col-1">
+                              <h1 class="project-header bigger">Village</h1>
+                            <p>UI/UX and Branding
+                              for executive cleaning
+                              website and app. </p>
+                        </div>
+                          <div id="village" class="project-image"></div>
+                      </div>
+                  </a>
+                  <a href="#" class="no-underline project-link">
+                      <div class="project-frame">
+                          <div class="frame-col-1">
+                                <h1 class="project-header bigger">Summer<br>Fest</h1>
+                              <p>UI/UX and Branding
+                                for executive cleaning
+                                website and app. </p>
+                          </div>
+                            <div id="summerfest" class="project-image"></div>
+                        </div>
+                    </a>
+                    <a href="#" class="no-underline project-link">
+                        <div class="project-frame">
+                            <div class="frame-col-1">
+                                  <h1 class="project-header bigger">Graveyard</h1>
+                                <p>UI/UX and Branding
+                                  for executive cleaning
+                                  website and app. </p>
+                            </div>
+                              <div id="graveyard" class="project-image"></div>
+                          </div>
+                      </a>
+                </div>
+              </section>
+              <section id="about"><a name="about-me" id="anchor3"></a>
+                  <h1 class="section-header large">About me</h1>
+                  <div class="about-intro">
+                    <p class="big">
+                        Coming from a start-up background my goal is to work with businesses to make thier vision a reality.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="col-1">
+                      <p>
+                          I started my career as an event manager for large corporates,
+                          then shifted to a start-up owner.
+                          I learned very fast how difficult communicating a product vision 
+                          is with designers and developers.
+                          I became a UI / UX designer to help businesses overcome this and bring thier product to life.
+                      </p>
+                    </div>
+                    <div class="col-2">
+                      <p>
+                          In 2018, I graduated from Auckland, Unitec with a Bachelor in Creative Enterprises, majoring in UI / UX design.
+                           Then recieved a certificate in Full-stack developement at
+                          Auckland, Enspiral Dev Academy.
+                          Currently, I am working at Datacom but love to talk to any business owners with a product vision.
+                      </p>
+                    </div>
+                  </div>
+                <div id="recognition">
+                  <div class="profile-image">
+                    <img src="../assets/img/profile-image.png">
+                  </div>
+                  <div class="recognition-description">
+                    <h1 class="bigger">Recognition</h1>
+                    <ul>
+                      <li><a href="../build/assets/pdf/Unitec certificate.pdf">Bachelor in UI/UX with Unitec, 2018</a></li>
+                      <li><a href="#">Excellence in Interaction Design, 2018</a></li>
+                      <li>Scholarship for Enspiral Dev Academy, 2018</li>
+                      <li><a href="../build/assets/pdf/Graduation certificate for Craig Evandah Victor Steadman.pdf">Certificate in Full Stack developement, 2018</a></li>
+                      <li><a href="https://designassembly.org.nz/2019/03/29/hot-new-things-evandah-steadman-unitec/">Design Assembly hot new stuff</a></li>
+                      <li><a href="https://www.unitec.ac.nz/about-us/success-for-unitec-at-datacomp-hackathon">Unitec Datacom Success</a></li>
+                      <li><a href="https://designersinstitute.nz/initiatives/dinz-student-council/">DINZ Student Council, 2018</a></li>
+                      <li>Unitec Graduate Interview</li>
+                    </ul>
+                    <a class="download-resume" href="../build/assets/pdf/Evandah_Steadman_Resume.pdf">Download<br>Resume</a>
+                  </div>
+                </div>
+              </section>
+              <section id="contact-section"><a name="contact-section" id="anchor4"></a>
+                  <h1 class="section-header large">Contact</h1>
+                  <div class="about-intro">
+                      <p class="big">  
+                          If youve got an awsome project in mind, or just want to say hi and get a coffee then lets chat.
+                      </p>
+                    </div>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vandahs@outlook.com&su=DesignEnquiry">
+                        <p class="email-link big">Compose an emails</p>
+                    </a>
+              </section>
+              <footer id="footer">
+                  <p class="small">+6421 244 2234</p>
+                  <p class="small">Vandahs@outlook.com</p>
+                  <p><a href="https://www.linkedin.com/in/evandah-steadman-810a3ab3/" class="underline small">Linkden</a> // <a href="https://www.behance.net/vandahs8361" class="underline small">Behance</a></p>
+              </footer>
         </article>
       </div>
     </div>
   </div>
+
 
 <body>
   <script src="./assets/js/vendors.js"></script>

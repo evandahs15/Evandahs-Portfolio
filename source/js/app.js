@@ -1,55 +1,36 @@
 // JavaScript
 window.sr = ScrollReveal()
 
-// sr.reveal('h1', {
-//     delay: 0,
-//     duration: 200,
-//     origin: 'bottom',
-//     distance: '100px'
-// });
+sr.reveal('.home-intro', {
+  delay: 0,
+  duration: 1000,
+  origin: 'bottom',
+  distance: '50px'
+})
 
-// ShowNav
+var menuOpen = false
+console.log(menuOpen)
+
 function showNav () {
-  console.log('this is working')
-  var x = document.getElementById('fullscreen-nav')
-  if (x.className === 'fullscreen-nav') {
-    x.className += ' unfold'
+  $('.close-nav').toggleClass('smart-close')
+  if (!menuOpen) {
+    menuOpen = true
+    $('#sidebar').addClass('sidebar-open')
+    $('#wrapper').animate({opacity: 0.1}, 300)
+
+    $('#content, .nav-item').click(function () {
+      $('#side-menu-button').removeClass('smart-close')
+      $('#sidebar').removeClass('sidebar-open')
+      $('#wrapper').animate({opacity: 1}, 300)
+      menuOpen = false
+    })
   } else {
-    x.className = 'fullscreen-nav'
+    $('#sidebar').removeClass('sidebar-open')
+    $('#wrapper').animate({opacity: 1}, 300)
+    menuOpen = false
   }
 }
 
-// Hover in nav
-// Hover for village in nav
-document.getElementById('nav-item-1').onmouseover = function () {
-  document.getElementById('village-nav-summary').style.display = 'grid'
-}
-document.getElementById('nav-item-1').onmouseout = function () {
-  document.getElementById('village-nav-summary').style.display = 'none'
-}
-// Hover for summerfest in nav
-document.getElementById('nav-item-2').onmouseover = function () {
-  document.getElementById('summerFest-nav-summary').style.display = 'grid'
-}
-document.getElementById('nav-item-2').onmouseout = function () {
-  document.getElementById('summerFest-nav-summary').style.display = 'none'
-}
-// Hover for poolside in nav
-document.getElementById('nav-item-3').onmouseover = function () {
-  document.getElementById('poolside-nav-summary').style.display = 'grid'
-}
-document.getElementById('nav-item-3').onmouseout = function () {
-  document.getElementById('poolside-nav-summary').style.display = 'none'
-}
-// Hover for about me in nav
-document.getElementById('nav-item-4').onmouseover = function () {
-  document.getElementById('about-nav-summary').style.display = 'grid'
-}
-document.getElementById('nav-item-4').onmouseout = function () {
-  document.getElementById('about-nav-summary').style.display = 'none'
-}
-// create a function when you click the nav-link,
-// 1. prevent default
-// 2. menu close
-// 3. soft transition to the new page
-
+// $('#title').mouseover(function () {
+//   $('.home-wrapper #projects').addClass('white')
+// })
