@@ -18,8 +18,7 @@ function showNav () {
     $('#sidebar').addClass('sidebar-open')
     $('#wrapper').animate({opacity: 0.1}, 300)
 
-    $('#content').click(function () {
-      event.preventDefault()
+    $('#content, .nav-item').click(function () {
       $('#side-menu-button').removeClass('smart-close')
       $('#sidebar').removeClass('sidebar-open')
       $('#wrapper').animate({opacity: 1}, 300)
