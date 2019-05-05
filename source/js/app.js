@@ -1,12 +1,12 @@
 // JavaScript
-// window.sr = ScrollReveal()
+window.sr = ScrollReveal()
 
-// sr.reveal('h1', {
-//     delay: 0,
-//     duration: 200,
-//     origin: 'bottom',
-//     distance: '100px'
-// });
+sr.reveal('.home-intro', {
+  delay: 0,
+  duration: 1000,
+  origin: 'bottom',
+  distance: '50px'
+})
 
 var menuOpen = false
 console.log(menuOpen)
@@ -23,7 +23,6 @@ function showNav () {
       $('#sidebar').removeClass('sidebar-open')
       $('#wrapper').animate({opacity: 1}, 300)
       menuOpen = false
-
     })
   } else {
     $('#sidebar').removeClass('sidebar-open')
@@ -31,3 +30,7 @@ function showNav () {
     menuOpen = false
   }
 }
+
+// $('#title').mouseover(function () {
+//   $('.home-wrapper #projects').addClass('white')
+// })

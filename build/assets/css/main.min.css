@@ -646,6 +646,9 @@ p, li, a {
   position: absolute;
   bottom: 0; }
 
+.white {
+  background: red !important; }
+
 .home-wrapper {
   margin-top: 70px;
   margin-bottom: 40px; }
