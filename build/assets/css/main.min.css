@@ -267,7 +267,7 @@ h1, h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700; }
 
-p {
+p, li {
   color: #5400DA;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -357,8 +357,7 @@ p, li, a {
 
 #contact {
   color: #5400DA;
-  font-size: 18px;
-  line-height: 22px; }
+  line-height: 23px; }
 
 #title {
   box-sizing: border-box;
