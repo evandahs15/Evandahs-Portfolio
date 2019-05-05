@@ -361,7 +361,10 @@ p, li, a {
 
 .sidebar:hover {
   background-image: url(../img/bg.png);
-  background-repeat: repeat-y; }
+  background-repeat: repeat repeat; }
+
+.sidebar-open:hover {
+  background-image: none !important; }
 
 .smart-close {
   opacity: 0; }
@@ -369,6 +372,12 @@ p, li, a {
 #contact {
   color: #5400DA;
   line-height: 23px; }
+
+#nav-toggle {
+  display: none; }
+  @media only screen and (max-width: 900px) {
+    #nav-toggle {
+      display: block; } }
 
 #title {
   box-sizing: border-box;

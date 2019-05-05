@@ -44,22 +44,24 @@
 
 .sidebar:hover
   background-image: url(../img/bg.png)
-  background-repeat: repeat-y
+  background-repeat: repeat repeat
+
+.sidebar-open:hover
+  background-image: none!important
 
 .smart-close
   opacity: 0
 
 
 
-
-
-
-
 #contact
-
   color: $blue
   line-height: 23px
 
 
 
 
+#nav-toggle
+  display: none
+  @media only screen and (max-width: 900px)
+    display: block
