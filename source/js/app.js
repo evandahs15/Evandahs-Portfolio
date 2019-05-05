@@ -9,7 +9,6 @@ sr.reveal('.home-intro', {
 })
 
 var menuOpen = false
-console.log(menuOpen)
 
 function showNav () {
   $('.close-nav').toggleClass('smart-close')
@@ -31,6 +30,56 @@ function showNav () {
   }
 }
 
-// $('#title').mouseover(function () {
-//   $('.home-wrapper #projects').addClass('white')
-// })
+$('#wrapper').scroll(function (e) {
+  var topDistance = $('#projects').offset().top
+  var hitTop = true
+  console.log(topDistance)
+  if (topDistance < 400.1875) {
+    hitTop = false
+    if (!hitTop) {
+      $('#page-header').replaceWith('<h1 id="page-header" class="huge"> Projects </h1>')
+    }
+  } else {
+    hitTop = true
+  }
+})
+
+$('#wrapper').scroll(function (e) {
+  var topDistance = $('#about').offset().top
+  var hitTop = true
+  if (topDistance < 300.1875) {
+    hitTop = false
+    if (!hitTop) {
+      $('#page-header').replaceWith('<h1 id="page-header" class="huge">About Me</h1>')
+    }
+  } else {
+    hitTop = true
+  }
+})
+
+$('#wrapper').scroll(function (e) {
+  var topDistance = $('.download-resume').offset().top
+  var hitTop = true
+
+  if (topDistance < 80.1875) {
+    hitTop = false
+    if (!hitTop) {
+      $('#page-header').replaceWith('<h1 id="page-header" class="huge">Contact</h1>')
+    }
+  } else {
+    hitTop = true
+  }
+})
+
+$('#wrapper').scroll(function (e) {
+  var topDistance = $('#home-intro').offset().top
+  var hitTop = true
+  if (topDistance > -400.1875) {
+    hitTop = false
+    if (!hitTop) {
+      $('#page-header').replaceWith('<h1 id="page-header" class="huge">Evandah Steadman</h1>')
+    }
+  } else {
+    hitTop = true
+  }
+})

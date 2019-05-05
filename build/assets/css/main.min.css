@@ -417,7 +417,8 @@ p, li, a {
   top: 0;
   bottom: 0;
   right: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  }
 
 #content {
   max-width: 100%;
@@ -426,7 +427,8 @@ p, li, a {
   bottom: 0; }
 
 #primary {
-  height: auto; }
+  height: auto;
+  }
 
 .project-body {
   text-align: center; }
