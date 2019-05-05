@@ -377,7 +377,10 @@ p, li, a {
   display: none; }
   @media only screen and (max-width: 900px) {
     #nav-toggle {
-      display: block; } }
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px; } }
 
 #title {
   box-sizing: border-box;
@@ -705,3 +708,6 @@ p, li, a {
 
 .left {
   text-align: right; }
+
+.project-description h2 {
+  padding-left: 2px; }

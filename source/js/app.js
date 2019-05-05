@@ -34,3 +34,17 @@ function showNav () {
 // $('#title').mouseover(function () {
 //   $('.home-wrapper #projects').addClass('white')
 // })
+
+// $('#project-wrapper').scroll(function (e) {
+//   var topDistance = $('#image-1').offset().top
+//   var hitTop = true
+//   console.log(topDistance)
+//   if (topDistance < -150.671875) {
+//     hitTop = false
+//     if (!hitTop) {
+//       $('#title').addClass('title-fade')
+//     }
+//   } else {
+//     $('#title').removeClass('title-fade')
+//   }
+// })
