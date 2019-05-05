@@ -267,22 +267,30 @@ h1 {
   font-family: 'Merriweather', serif;
   font-weight: 700; }
 
-p, h4, span {
+p {
   color: #5400DA;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   letter-spacing: 0px; }
 
-.large {
+.huge {
   font-size: 65px;
-  letter-spacing: 0px; }
+  letter-spacing: 0px;
+  font-weight: 700; }
+
+.large {
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin: 0px; }
 
 .bigger {
-  font-size: 55px;
-  letter-spacing: 0px; }
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0px; }
 
 .big {
-  font-size: 42px;
+  font-size: 36px;
   letter-spacing: 0px; }
 
 .medium {
@@ -300,10 +308,14 @@ ul {
   list-style: none;
   padding-left: 0; }
 
-p {
-  margin: 0 0 20px 0;
-  font-size: 30px;
-  letter-spacing: 0; }
+p, li, a {
+  margin: 0 0 0 0;
+  font-size: 22px;
+  letter-spacing: 0;
+  font-weight: 400; }
+
+.section-header {
+  margin-bottom: 70px; }
 
 .fullscreen-nav {
   display: block;
@@ -398,58 +410,9 @@ p {
     padding-top: 50px;
     padding-bottom: 50px; }
 
-.project-tile {
-  position: relative;
-  height: 330px;
-  width: 100%;
-  text-align: left;
-  margin-top: 100px; }
-
-.link {
-  clear: right;
-  float: left;
-  margin: 25px 0;
-  padding: 35px 0;
-  position: relative;
-  font-family: 'Work Sans';
-  font-size: 63px;
-  letter-spacing: -2.5px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  transform: scale(0.8, 0.8);
-  transform-origin: left;
-  transition: all 0.2s ease; }
-  .link span {
-    display: block;
-    font-size: 30px;
-    line-height: 35px;
-    letter-spacing: -1.1px;
-    margin-top: 55px; }
-
-.project-background-image {
-  width: 760px;
-  height: 90%;
-  background-size: cover;
-  position: absolute;
-  right: 0;
-  filter: grayscale(1);
-  opacity: .2;
-  transition: all 0.2s ease; }
-
-.section-header {
-  display: block; }
-
 #projects {
   display: block;
   width: 100%; }
-
-.project-link:hover .project-background-image {
-  opacity: .95;
-  filter: grayscale(0); }
-
-.project-link:hover .link {
-  transform: scale(0.85, 0.85);
-  transform-origin: left; }
 
 #spotless {
   background-image: url(../img/spotless-hero-image.png); }
@@ -463,20 +426,65 @@ p {
 #graveyard {
   background-image: url(../img/graveyard-hero-image.png); }
 
+.project-frame {
+  opacity: 0.5;
+  transform: scale(0.95, 0.95);
+  transform-origin: left;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 200px;
+  border: 3px solid #5400DA;
+  transition: all 0.2s ease; }
+
+.frame-col-1 {
+  width: 70%;
+  border-right: 3px solid #5400DA; }
+  .frame-col-1 p {
+    padding: 25px;
+    margin: 0px; }
+
+.project-header {
+  display: block;
+  padding-left: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: auto;
+  border-bottom: 3px solid #5400DA; }
+
+.project-image {
+  width: 100%;
+  filter: grayscale(1);
+  opacity: .2;
+  transition: all 0.2s ease;
+  background-size: cover; }
+
+.project-link:hover .project-image {
+  opacity: .95;
+  filter: grayscale(0); }
+
+.project-link:hover .project-frame {
+  transform: scale(1, 1);
+  transform-origin: left;
+  opacity: 1; }
+
+.no-underline {
+  text-decoration: none !important; }
+
 #about {
-  margin-top: 150px;
+  margin-top: 160px;
   display: block;
   width: 100%; }
 
 .about-intro {
   display: block;
-  margin-top: 70px;
-  margin-bottom: 50px; }
+  margin-bottom: 60px; }
   .about-intro p {
+    font-size: 36px;
     margin: 0px;
-    font-size: 42px;
-    letter-spacing: -1.2px;
-    line-height: 50px; }
+    letter-spacing: -0.2px; }
 
 .col-1 {
   display: block;
@@ -485,8 +493,7 @@ p {
   padding-right: 50px; }
   .col-1 p {
     margin: 0px;
-    font-size: 25px;
-    line-height: 29px; }
+    line-height: 30px; }
 
 .col-2 {
   display: block;
@@ -495,8 +502,7 @@ p {
   padding-right: 50px; }
   .col-2 p {
     margin: 0px;
-    font-size: 25px;
-    line-height: 29px; }
+    line-height: 30px; }
 
 #recognition {
   padding-top: 150px;
@@ -512,8 +518,6 @@ p {
 .recognition-description h1 {
   margin: 0px;
   margin-bottom: 45px;
-  font-size: 42px;
-  letter-spacing: -1.2px;
   line-height: 50px; }
 
 .recognition-description ul {
@@ -521,14 +525,11 @@ p {
   .recognition-description ul li {
     padding-bottom: 15px; }
     .recognition-description ul li a {
-      font-size: 25px;
       color: #5400DA;
       line-height: 29px; }
 
-.recognition-description span {
+.download-resume {
   text-decoration: underline;
-  font-size: 25px;
-  color: #5400DA;
   line-height: 34px; }
 
 .spacer {
@@ -537,18 +538,15 @@ p {
 #contact-section {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   padding-top: 30%; }
 
 .email-link {
   text-decoration: underline;
   margin: 0px;
-  font-size: 42px;
-  letter-spacing: -1.2px;
   line-height: 50px; }
 
 #footer {
-  opacity: 0.75;
   padding-right: 3%;
   display: flex;
   flex-direction: row;
@@ -570,9 +568,6 @@ p {
       margin-left: 15%; } }
   #footer p {
     display: inline-block;
-    margin: 0px;
-    font-size: 18px;
-    line-height: 0px;
     padding-bottom: 15px; }
     @media only screen and (max-width: 850px) {
       #footer p {
@@ -652,6 +647,6 @@ p {
   width: 50px;
   top: 150px;
   right: 50px;
-  bottom: 50px;
+  bottom: 93px;
   margin-top: 19%;
   z-index: 90; }

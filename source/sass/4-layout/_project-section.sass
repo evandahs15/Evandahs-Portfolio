@@ -7,59 +7,10 @@
     padding-top: 50px
     padding-bottom: 50px
 
-.project-tile
-  position: relative
-  height: 330px
-  width: 100%
-  text-align: left
-  margin-top: 100px
-
-
-.link
-    clear: right
-    float: left
-    margin: 25px 0
-    padding: 35px 0
-    position: relative
-    font-family: 'Work Sans'
-    font-size: 63px
-    letter-spacing: -2.5px
-    margin-top: 55px
-    margin-bottom: 55px
-    transform: scale(.80,.80)
-    transform-origin: left
-    transition: all 0.2s ease
-    span
-      display: block
-      font-size: 30px
-      line-height: 35px
-      letter-spacing: -1.1px
-      margin-top: 55px
-
-.project-background-image
-  width: 760px
-  height: 90%
-  background-size: cover
-  position: absolute
-  right: 0
-  filter: grayscale(1)
-  opacity: .2
-  transition: all 0.2s ease
-
-.section-header
-  display: block
 
 #projects
   display: block
   width: 100%
-
-.project-link:hover
-  .project-background-image
-    opacity: .95
-    filter: grayscale(0)
-  .link
-    transform: scale(.85,.85)
-    transform-origin: left
 
 #spotless
   background-image: url(../img/spotless-hero-image.png)
@@ -72,3 +23,51 @@
 
 #graveyard
   background-image: url(../img/graveyard-hero-image.png)
+
+.project-frame
+  opacity: 0.5
+  transform: scale(.95,.95)
+  transform-origin: left
+  display: flex
+  flex-direction: row
+  height: auto
+  width: 100%
+  text-align: left
+  margin-bottom: 200px
+  border: 3px solid $blue
+  transition: all 0.2s ease
+
+
+.frame-col-1
+  width: 70%
+  border-right: 3px solid $blue
+  p
+    padding: 25px
+    margin: 0px
+    
+.project-header
+  display: block
+  padding-left: 25px
+  padding-top: 30px
+  padding-bottom: 30px
+  height: auto
+  border-bottom: 3px solid $blue
+
+.project-image
+  width: 100%
+  filter: grayscale(1)
+  opacity: .2
+  transition: all 0.2s ease
+  background-size: cover
+
+.project-link:hover
+  .project-image
+    opacity: .95
+    filter: grayscale(0)
+  .project-frame
+    transform: scale(1,1)
+    transform-origin: left
+    opacity: 1
+
+.no-underline
+  text-decoration: none!important
