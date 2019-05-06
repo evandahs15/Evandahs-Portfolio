@@ -470,7 +470,12 @@ p, li, a {
   background-image: url(../img/graveyard-hero-image.png);
   background-position: center; }
 
+.frame-wrapper {
+  position: relative; }
+
 .project-frame {
+  background: white;
+  position: relative;
   opacity: 0.5;
   transform: scale(0.95, 0.95);
   transform-origin: left;
@@ -485,11 +490,44 @@ p, li, a {
   transition: all 0.2s ease; }
 
 .frame-col-1 {
+  display: block;
+  background: white;
+  z-index: 10;
   width: 70%;
   border-right: 3px solid #5400DA; }
   .frame-col-1 p {
     padding: 25px;
     margin: 0px; }
+
+.extrude-left {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 40px;
+  background-image: url(../img/bg.png);
+  background-repeat: repeat repeat;
+  left: -30px;
+  z-index: -1;
+  bottom: -31px; }
+
+.extrude-bottom {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  bottom: -29px;
+  height: 40px;
+  left: -30px;
+  background-image: url(../img/bg.png);
+  background-repeat: repeat repeat; }
+
+.white-bottom {
+  display: none;
+  background: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 20px; }
 
 .project-header {
   display: block;
@@ -500,6 +538,8 @@ p, li, a {
   border-bottom: 3px solid #5400DA; }
 
 .project-image {
+  display: block;
+  z-index: 10;
   width: 100%;
   filter: grayscale(1);
   opacity: .2;
@@ -515,9 +555,14 @@ p, li, a {
   transform-origin: left;
   opacity: 1; }
 
-.project-link:hover .frame-col-1 .project-header {
-  background-image: url(../img/bg.png);
-  background-repeat: repeat repeat; }
+.project-link:hover .extrude-left {
+  display: block; }
+
+.project-link:hover .extrude-bottom {
+  display: block; }
+
+.project-link:hover .white-bottom {
+  display: block; }
 
 .no-underline {
   text-decoration: none !important; }
