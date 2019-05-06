@@ -1,7 +1,6 @@
-JavaScript
 window.sr = ScrollReveal()
 
-sr.reveal('.home-intro', {
+sr.reveal('.home-intro, .about-project-container', {
   delay: 0,
   duration: 1000,
   origin: 'bottom',
