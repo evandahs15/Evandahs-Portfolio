@@ -329,7 +329,9 @@ p, li, a {
   z-index: 99;
   padding: 30px;
   width: 29%;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  background-image: url(../img/bg.png);
+  background-repeat: repeat repeat; }
   .sidebar .nav-col-1 {
     opacity: 0;
     display: flex;
@@ -360,11 +362,10 @@ p, li, a {
   transition: all 0.3s; }
 
 .sidebar:hover {
-  background-image: url(../img/bg.png);
-  background-repeat: repeat repeat; }
+  left: -24%; }
 
 .sidebar-open:hover {
-  background-image: none !important; }
+  left: 0px !important; }
 
 .smart-close {
   opacity: 0; }
