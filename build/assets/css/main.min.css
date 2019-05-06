@@ -727,8 +727,11 @@ p, li, a {
   width: 70%;
   padding-right: 50px; }
 
-.proccess {
-  width: 30%; }
+.proccess p {
+  padding-bottom: 10px; }
+
+.proccess ul li {
+  padding-bottom: 10px; }
 
 .about-project-container {
   display: flex;
@@ -740,13 +743,16 @@ p, li, a {
   border-bottom: solid 3px #5400DA; }
 
 #about-project {
-  margin-top: 70px; }
+  margin-top: 170px; }
 
 .project-body {
   margin-bottom: 100px;
-  text-align: center; }
+  text-align: left; }
   .project-body img {
     width: 100%; }
+  .project-body p {
+    margin-bottom: 70px;
+    margin-top: 70px; }
 
 .main-project-section {
   border-bottom: solid 3px #5400DA; }
@@ -789,3 +795,6 @@ p, li, a {
 
 .rotate {
   transform: rotate(-90deg) !important; }
+
+#behind-scenes-section {
+  display: none; }

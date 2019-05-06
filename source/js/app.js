@@ -16,12 +16,12 @@ function showNav () {
   if (!menuOpen) {
     menuOpen = true
     $('#sidebar').addClass('sidebar-open')
-    $('#wrapper').animate({opacity: 0.1}, 300)
+    $('#wrapper, #project-wrapper').animate({opacity: 0.1}, 300)
 
     $('#content, .nav-item').click(function () {
       $('#side-menu-button').removeClass('smart-close')
       $('#sidebar').removeClass('sidebar-open')
-      $('#wrapper').animate({opacity: 1}, 300)
+      $('#wrapper, #project-wrapper').animate({opacity: 1}, 300)
       menuOpen = false
     })
   } else {
@@ -51,9 +51,17 @@ $('#project-wrapper').scroll(function (e) {
 function showSection () {
   $('#mobile-app-section').slideToggle('slow', function () {})
   $('#Line-4-Copy').toggleClass('minus')
-  $('.plus-sign').toggleClass('rotate')
+  $('#plus-sign-1').toggleClass('rotate')
   setTimeout(function () {
-    $('.project-section-header-container').toggleClass('disable-hover')
+    $('#mobile-app-section-header').toggleClass('disable-hover')
   }, 500)
-  
+}
+
+function showbhsSection () {
+  $('#behind-scenes-section').slideToggle('slow', function () {})
+  $('#Line-7-Copy').toggleClass('minus')
+  $('#plus-sign-2').toggleClass('rotate')
+  setTimeout(function () {
+    $('#bhs-section-header').toggleClass('disable-hover')
+  }, 500)
 }
