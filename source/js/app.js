@@ -1,12 +1,12 @@
-// JavaScript
-// window.sr = ScrollReveal()
+JavaScript
+window.sr = ScrollReveal()
 
-// sr.reveal('.home-intro', {
-//   delay: 0,
-//   duration: 1000,
-//   origin: 'bottom',
-//   distance: '50px'
-// })
+sr.reveal('.home-intro', {
+  delay: 0,
+  duration: 1000,
+  origin: 'bottom',
+  distance: '50px'
+})
 
 var menuOpen = false
 console.log(menuOpen)
@@ -30,10 +30,6 @@ function showNav () {
     menuOpen = false
   }
 }
-
-// $('#title').mouseover(function () {
-//   $('.home-wrapper #projects').addClass('white')
-// })
 
 $('#project-wrapper').scroll(function (e) {
   var topDistance = $('#image-1').offset().top

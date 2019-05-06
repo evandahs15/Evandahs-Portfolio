@@ -267,7 +267,7 @@ h1, h2 {
   font-family: 'Merriweather', serif;
   font-weight: 700; }
 
-p, li {
+p, li, a {
   color: #5400DA;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -455,16 +455,20 @@ p, li, a {
   width: 100%; }
 
 #spotless {
-  background-image: url(../img/spotless-hero-image.png); }
+  background-image: url(../img/spotless-home-image.png);
+  background-position: center; }
 
 #village {
-  background-image: url(../img/village-hero-image.png); }
+  background-image: url(../img/village-home-image.png);
+  background-position: center; }
 
 #summerfest {
-  background-image: url(../img/summerfest-hero-image.png); }
+  background-image: url(../img/summerfest-home-image.png);
+  background-position: center; }
 
 #graveyard {
-  background-image: url(../img/graveyard-hero-image.png); }
+  background-image: url(../img/graveyard-hero-image.png);
+  background-position: center; }
 
 .project-frame {
   opacity: 0.5;
@@ -743,7 +747,7 @@ p, li, a {
   border-bottom: solid 3px #5400DA; }
 
 #about-project {
-  margin-top: 170px; }
+  padding-top: 170px; }
 
 .project-body {
   margin-bottom: 100px;
@@ -798,3 +802,8 @@ p, li, a {
 
 #behind-scenes-section {
   display: none; }
+
+#back-to-top {
+  position: block;
+  padding-bottom: 20px;
+  text-decoration: underline; }
