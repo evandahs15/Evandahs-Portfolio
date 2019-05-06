@@ -1,5 +1,5 @@
 jQuery(document).ready(function () {
-  $('#wrapper').scroll(function () {
+  $('#wrapper, #project-wrapper').scroll(function () {
     var content = $(this).height()
     var primary = $('#primary').height()
     var onScroll = $(this).scrollTop()
