@@ -8,6 +8,7 @@ sr.reveal('.home-intro, .about-project-container', {
 })
 
 var menuOpen = false
+var navOpen = false
 console.log(menuOpen)
 
 function showNav () {
@@ -59,4 +60,28 @@ function showbhsSection () {
   setTimeout(function () {
     $('#bhs-section-header').toggleClass('disable-hover')
   }, 500)
+}
+
+function toggleNav () {
+  console.log('hello')
+  $('#Rectangle-1').toggleClass('line-to-cross-1')
+  $('#Rectangle-2').toggleClass('line-to-cross-2')
+  $('#Rectangle-3').toggleClass('line-to-cross-3')
+  if (!navOpen) {
+    navOpen = true
+    console.log(navOpen)
+    $('#sidebar').addClass('sidebar-open')
+    $('#wrapper, #project-wrapper').animate({opacity: 0.1}, 300)
+
+    $('#content, .nav-item').click(function () {
+      $('#side-menu-button').removeClass('smart-close')
+      $('#sidebar').removeClass('sidebar-open')
+      $('#wrapper, #project-wrapper').animate({opacity: 1}, 300)
+      navOpen = false
+    })
+  } else {
+    $('#sidebar').removeClass('sidebar-open')
+    $('#wrapper').animate({opacity: 1}, 300)
+    navOpen = false
+  }
 }

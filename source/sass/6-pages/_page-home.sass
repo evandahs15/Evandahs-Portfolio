@@ -1,17 +1,26 @@
 .home-wrapper
   margin-top: 70px
   margin-bottom: 40px
+  @media only screen and (max-width: 420px)
+    margin-top: 15vh
+  
   
 
 .home-intro
   height: 80vh
   padding-top: 10%
+  @media only screen and (max-width: 420px)
+    padding-top: 0px
 
 #welcome-intro
   display: block
   width: 100%
   padding-bottom: 35px
   border-bottom: 3px solid $blue
+  br
+    @media only screen and (max-width: 700px)
+      display: none
+
 
 #view-work
   margin-top: 35px
@@ -19,8 +28,12 @@
   right: 0px
   position: relative
   text-align: right
+  @media only screen and (max-width: 500px)
+    text-align: left
   h1
     text-decoration: underline
+    @media only screen and (max-width: 500px)
+      margin-top: 50px
 
 #home-scrollbar
   position: fixed
@@ -31,3 +44,30 @@
   bottom: 93px
   margin-top: 19%
   z-index: 90
+  @media only screen and (max-width: 500px)
+    right: 40px
+  @media only screen and (max-width: 420px)
+    margin-top: 15vh
+  @media only screen and (max-width: 370px)
+    right: 30px
+
+#home-title
+  box-sizing: border-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: fixed
+  background: $white
+  border-bottom: 3px solid $blue
+  margin-left: 13%
+  padding-right: 40px
+  z-index: 5
+  right: 0
+  left: 0
+  top: 0
+  height: 14vh
+  transition: all 0.8s ease
+  @media only screen and (max-width: 700px)
+    height: 10vh
+  @media only screen and (max-width: 370px)
+    height: 15vh

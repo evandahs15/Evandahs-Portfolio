@@ -61,13 +61,50 @@
   color: $blue
   line-height: 23px
 
+#side-nav-toggle
+  width: 16px
+  height: 20px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  @media only screen and (max-width: 900px)
+    display: none
 
 
 
-#nav-toggle
+#top-nav-toggle
+  width: 20px
+  height: 16px
+  transition: all 0.3s
   display: none
   @media only screen and (max-width: 900px)
-    display: block
-    position: fixed
-    top: 20px
-    right: 20px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: absolute
+    top: 40%
+    right: 35px
+
+.rectangle-top
+  width: 100%
+  height: 2px
+  background: $blue 
+
+.rectangle-side
+  height: 100%
+  width: 2px
+  background: $blue 
+
+#Rectangle-1,#Rectangle-2,#Rectangle-3
+  transition: all 0.3s ease
+
+.line-to-cross-1
+  transform-origin: left
+  transform: rotate(45deg)
+
+.line-to-cross-2
+  width: 0px
+
+.line-to-cross-3
+  transform-origin: left
+  transform: rotate(-45deg)
