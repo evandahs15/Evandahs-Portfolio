@@ -400,6 +400,27 @@ p, li, a {
   transition: all 0.3s;
   background-image: url(../img/bg.png);
   background-repeat: repeat repeat; }
+  @media only screen and (max-width: 1050px) {
+    .sidebar {
+      width: 35%;
+      left: -32%; } }
+  @media only screen and (max-width: 900px) {
+    .sidebar {
+      width: 40%;
+      left: -37%; } }
+  @media only screen and (max-width: 670px) {
+    .sidebar {
+      width: 50%;
+      left: -47%; } }
+  @media only screen and (max-width: 520px) {
+    .sidebar {
+      width: 60%;
+      left: -57%; } }
+  @media only screen and (max-width: 420px) {
+    .sidebar {
+      width: 70%;
+      left: -67%;
+      padding-left: 15px; } }
   .sidebar .nav-col-1 {
     display: none;
     flex-direction: column;
@@ -427,8 +448,9 @@ p, li, a {
   top: 50%;
   right: 12px; }
 
-.sidebar:hover {
-  left: -24%; }
+@media only screen and (min-width: 1100px) {
+  .sidebar:hover {
+    left: -24%; } }
 
 .sidebar-open:hover {
   left: 0px !important; }
@@ -439,6 +461,12 @@ p, li, a {
 #contact {
   color: #5400DA;
   line-height: 23px; }
+  @media only screen and (max-width: 320px) {
+    #contact ul li {
+      font-size: 16px; } }
+  @media only screen and (max-width: 320px) and (max-width: 320px) {
+    #contact ul li a {
+      font-size: 16px; } }
 
 #side-nav-toggle {
   width: 18px;
@@ -454,15 +482,20 @@ p, li, a {
   width: 20px;
   height: 16px;
   transition: all 0.3s;
-  display: none; }
+  display: none;
+  transform: scale(0.8); }
   @media only screen and (max-width: 1100px) {
     #top-nav-toggle {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      position: absolute;
-      top: 40%;
+      position: fixed;
+      z-index: 99;
+      top: 40px;
       right: 35px; } }
+
+#top-nav-toggle:hover {
+  transform: scale(1); }
 
 .rectangle-top {
   width: 100%;
@@ -487,6 +520,14 @@ p, li, a {
 .line-to-cross-3 {
   transform-origin: left;
   transform: rotate(-45deg); }
+
+@media only screen and (max-width: 320px) {
+  .nav-intro {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 1260px) {
+  .nav-intro br {
+    display: none; } }
 
 #title {
   box-sizing: border-box;
@@ -520,8 +561,7 @@ p, li, a {
   letter-spacing: 0; }
   @media only screen and (max-width: 1100px) {
     .name {
-      font-size: 22px;
-      } }
+      font-size: 28px; } }
   @media only screen and (max-width: 370px) {
     .name {
       font-size: 26px; } }
