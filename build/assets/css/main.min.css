@@ -295,13 +295,13 @@ p, li, a {
   @media only screen and (max-width: 1100px) {
     .large {
       font-size: 48px; } }
-  @media only screen and (max-width: 810px) {
+  @media only screen and (max-width: 900px) {
     .large {
       font-size: 40px; } }
   @media only screen and (max-width: 600px) {
     .large {
       font-size: 36px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .large {
       font-size: 22px;
       font-weight: 600; } }
@@ -311,7 +311,7 @@ p, li, a {
   font-weight: 400;
   margin: 0px;
   line-height: 52px; }
-  @media only screen and (max-width: 810px) {
+  @media only screen and (max-width: 900px) {
     .bigger {
       font-size: 36px;
       line-height: 46px; } }
@@ -319,7 +319,7 @@ p, li, a {
     .bigger {
       font-size: 32px;
       line-height: 40px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .bigger {
       font-size: 22px;
       font-weight: 600; } }
@@ -343,7 +343,7 @@ p, li, a {
     .big {
       font-size: 24px !important;
       line-height: 34px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .big {
       font-size: 18px !important;
       line-height: 26px;
@@ -352,17 +352,21 @@ p, li, a {
 .medium {
   font-size: 30px;
   font-weight: 400;
-  letter-spacing: 0px; }
-  @media only screen and (max-width: 1100px) {
+  letter-spacing: 0px;
+  line-height: 40px; }
+  @media only screen and (max-width: 1200px) {
     .medium {
-      font-size: 28px; } }
+      font-size: 24px;
+      line-height: 32px; } }
   @media only screen and (max-width: 810px) {
     .medium {
-      font-size: 22px; } }
-  @media only screen and (max-width: 400px) {
+      font-size: 22px;
+      line-height: 30px; } }
+  @media only screen and (max-width: 425px) {
     .medium {
       font-size: 18px;
-      font-weight: 300; } }
+      font-weight: 300;
+      line-height: 24px; } }
 
 .small {
   font-size: 20px;
@@ -370,7 +374,7 @@ p, li, a {
   @media only screen and (max-width: 810px) {
     .small {
       font-size: 18px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .small {
       font-size: 16px;
       font-weight: 400; } }
@@ -393,7 +397,7 @@ p, li, a {
   @media only screen and (max-width: 810px) {
     p, li, a {
       font-size: 18px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     p, li, a {
       font-size: 16px;
       line-height: 20px;
@@ -430,7 +434,7 @@ p, li, a {
     .sidebar {
       width: 60%;
       left: -57%; } }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 424px) {
     .sidebar {
       width: 70%;
       left: -67%;
@@ -446,7 +450,7 @@ p, li, a {
     margin: 0px;
     margin-bottom: 40px;
     font-weight: 400; }
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 425px) {
       .sidebar h2 {
         margin-bottom: 15px; } }
   .sidebar li {
@@ -479,12 +483,16 @@ p, li, a {
 #contact {
   color: #5400DA;
   line-height: 10px; }
-  @media only screen and (max-width: 400px) {
-    #contact ul li {
-      font-size: 16px; } }
-  @media only screen and (max-width: 400px) and (max-width: 400px) {
+  #contact ul li {
+    padding-bottom: 15px; }
+    @media only screen and (max-width: 425px) {
+      #contact ul li {
+        font-size: 16px;
+        padding-bottom: 0px; } }
+  @media only screen and (max-width: 425px) and (max-width: 425px) {
     #contact ul li a {
-      font-size: 16px; } }
+      font-size: 16px;
+      padding-bottom: 0px; } }
 
 #side-nav-toggle {
   width: 18px;
@@ -511,7 +519,7 @@ p, li, a {
       z-index: 99;
       top: 40px;
       right: 35px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     #top-nav-toggle {
       top: 22px;
       right: 15px; } }
@@ -523,7 +531,7 @@ p, li, a {
   width: 100%;
   height: 3px;
   background: #5400DA; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .rectangle-top {
       height: 1px; } }
 
@@ -546,8 +554,13 @@ p, li, a {
   transform-origin: left;
   transform: rotate(-45deg); }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 1100px) {
   .nav-intro {
+    line-height: 30px; } }
+
+@media only screen and (max-width: 425px) {
+  .nav-intro {
+    line-height: 24px;
     font-size: 16px; } }
 
 @media only screen and (max-width: 1260px) {
@@ -573,6 +586,11 @@ p, li, a {
   @media only screen and (max-width: 500px) {
     #title {
       height: 12vh; } }
+  @media only screen and (max-width: 425px) {
+    #title {
+      height: 10vh;
+      margin-left: 11%;
+      margin-right: 15px; } }
   #title h1 {
     padding: 10px 0px 10px 0px;
     margin: 0px; }
@@ -587,7 +605,7 @@ p, li, a {
   @media only screen and (max-width: 1100px) {
     .name {
       font-size: 28px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .name {
       font-size: 20px;
       font-weight: 300; } }
@@ -607,7 +625,7 @@ p, li, a {
   @media only screen and (max-width: 700px) {
     #wrapper {
       margin-top: 10vh; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     #wrapper {
       padding: 0px 12% 0px 11%; } }
 
@@ -623,7 +641,7 @@ p, li, a {
 #primary {
   height: auto;
   padding-left: 2px; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     #primary {
       padding-left: 0px; } }
 
@@ -639,6 +657,10 @@ p, li, a {
   bottom: 0;
   right: 0;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 425px) {
+    #project-wrapper {
+      padding: 0px 12% 0px 11%;
+      padding-top: 14vh; } }
 
 .title-fade {
   top: -14vh !important;
@@ -688,7 +710,7 @@ p, li, a {
       flex-direction: column-reverse;
       margin-bottom: 20vh;
       width: 100%; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .project-frame {
       margin-bottom: 100px !important;
       opacity: 1;
@@ -708,7 +730,7 @@ p, li, a {
   .frame-col-1 p {
     padding: 25px;
     margin: 0px; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       .frame-col-1 p {
         padding: 15px; } }
 
@@ -723,7 +745,7 @@ p, li, a {
   @media only screen and (max-width: 768px) {
     .project-image {
       height: 300px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .project-image {
       height: 180px;
       filter: grayscale(0);
@@ -743,7 +765,7 @@ p, li, a {
     .extrude-left {
       left: -22px;
       bottom: -27px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .extrude-left {
       display: none !important; } }
 
@@ -761,7 +783,7 @@ p, li, a {
     .extrude-bottom {
       left: -22px;
       bottom: -23px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .extrude-bottom {
       display: none !important; } }
 
@@ -772,7 +794,7 @@ p, li, a {
   width: 100%;
   bottom: 0px;
   height: 20px; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .white-bottom {
       display: none !important; } }
 
@@ -783,13 +805,13 @@ p, li, a {
   padding-bottom: 30px;
   height: auto;
   border-bottom: 3px solid #5400DA; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .project-header {
       padding: 15px;
       background-image: url(../img/bg.png);
       background-repeat: repeat repeat;
       background-size: 35%; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .project-header br {
       display: none; } }
 
@@ -813,7 +835,7 @@ p, li, a {
 
 .section-header {
   margin-bottom: 70px; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .section-header {
       margin-bottom: 30px; } }
 
@@ -845,7 +867,7 @@ p, li, a {
   @media only screen and (max-width: 720px) {
     .col-1 {
       padding-bottom: 30px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .col-1 {
       padding-right: 0px; } }
   .col-1 p {
@@ -867,7 +889,7 @@ p, li, a {
       .col-1 p {
         font-size: 22px !important;
         line-height: 34px; } }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       .col-1 p {
         font-size: 16px !important;
         line-height: 26px; } }
@@ -880,7 +902,7 @@ p, li, a {
   @media only screen and (max-width: 1024px) {
     .col-2 {
       width: 100%; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .col-2 {
       padding-right: 0px; } }
   .col-2 p {
@@ -902,7 +924,7 @@ p, li, a {
       .col-2 p {
         font-size: 22px !important;
         line-height: 34px; } }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       .col-2 p {
         font-size: 16px !important;
         line-height: 26px; } }
@@ -916,7 +938,7 @@ p, li, a {
     #recognition {
       display: flex;
       flex-direction: column; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     #recognition {
       padding-top: 40px; } }
 
@@ -962,7 +984,7 @@ p, li, a {
       .recognition-description h1 {
         margin-top: 50px;
         font-size: 30px; } }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       .recognition-description h1 {
         font-size: 22px;
         margin: 0px;
@@ -970,7 +992,7 @@ p, li, a {
         margin-bottom: 10px; } }
   .recognition-description ul {
     margin-bottom: 100px; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       .recognition-description ul {
         margin-bottom: 50px; } }
     .recognition-description ul li, .recognition-description ul a {
@@ -997,7 +1019,7 @@ p, li, a {
         .recognition-description ul li, .recognition-description ul a {
           font-size: 22px !important;
           line-height: 30px; } }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 425px) {
         .recognition-description ul li, .recognition-description ul a {
           font-size: 16px !important;
           line-height: 22px; } }
@@ -1021,7 +1043,7 @@ p, li, a {
     .download-resume {
       font-size: 22px !important;
       line-height: 34px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .download-resume {
       font-size: 18px !important;
       line-height: 24px; } }
@@ -1035,7 +1057,7 @@ p, li, a {
   @media only screen and (max-width: 870px) {
     #contact-section {
       margin-top: 30%; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     #contact-section {
       margin-top: 20vh;
       height: 80vh;
@@ -1051,7 +1073,7 @@ p, li, a {
     font-size: 36px;
     margin: 0px;
     letter-spacing: -0.2px; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       .contact-intro p, .contact-intro a {
         font-size: 18px !important; } }
 
@@ -1059,7 +1081,7 @@ p, li, a {
   text-decoration: underline;
   margin: 0px;
   line-height: 50px; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     .email-link {
       font-size: 16px !important; } }
 
@@ -1072,12 +1094,12 @@ p, li, a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end; }
+  align-items: flex-end;
+  opacity: .7; }
   @media only screen and (max-width: 810px) {
     #footer {
-      justify-content: left;
-      opacity: .7; } }
-  @media only screen and (max-width: 400px) {
+      justify-content: left; } }
+  @media only screen and (max-width: 425px) {
     #footer {
       margin-bottom: 0px; } }
 
@@ -1088,14 +1110,13 @@ p, li, a {
   @media only screen and (max-width: 810px) {
     #footer p {
       padding-right: 30px; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     #footer p {
       padding-right: 0px; } }
 
 #back-to-top {
   display: block;
   padding-bottom: 15px;
-  text-decoration: underline;
   padding-left: 0px; }
 
 .flex-video {
@@ -1119,11 +1140,21 @@ p, li, a {
   position: fixed;
   height: auto;
   width: 50px;
-  top: 150px;
+  top: 34vh;
   right: 50px;
-  bottom: 50px;
+  bottom: 80px;
   margin-top: 10%;
   z-index: 90; }
+  @media only screen and (max-width: 900px) {
+    #scrollbarWrapper {
+      top: 28vh; } }
+  @media only screen and (max-width: 500px) {
+    #scrollbarWrapper {
+      right: 40px; } }
+  @media only screen and (max-width: 425px) {
+    #scrollbarWrapper {
+      right: 10px;
+      bottom: 50px; } }
 
 #scrollbar {
   margin-top: 10%;
@@ -1144,14 +1175,14 @@ p, li, a {
 .home-wrapper {
   margin-top: 70px;
   margin-bottom: 40px; }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 425px) {
     .home-wrapper {
       margin-top: 15vh; } }
 
 .home-intro {
   height: 80vh;
   padding-top: 10%; }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 425px) {
     .home-intro {
       padding-top: 0px; } }
 
@@ -1191,7 +1222,7 @@ p, li, a {
   @media only screen and (max-width: 500px) {
     #home-scrollbar {
       right: 40px; } }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 425px) {
     #home-scrollbar {
       margin-top: 15vh; } }
   @media only screen and (max-width: 400px) {
@@ -1218,11 +1249,24 @@ p, li, a {
   @media only screen and (max-width: 700px) {
     #home-title {
       height: 10vh; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     #home-title {
       height: 10vh;
       margin-left: 11%;
       margin-right: 15px; } }
+  #home-title h1 {
+    font-size: 65px;
+    letter-spacing: 0px;
+    font-weight: 700; }
+    @media only screen and (max-width: 1100px) {
+      #home-title h1 {
+        font-size: 50px; } }
+    @media only screen and (max-width: 700px) {
+      #home-title h1 {
+        font-size: 35px; } }
+    @media only screen and (max-width: 500px) {
+      #home-title h1 {
+        font-size: 22px; } }
 
 .other-projects-container {
   width: 100%;
@@ -1234,19 +1278,27 @@ p, li, a {
   display: inline-block;
   padding-right: 30px;
   padding-left: 30px; }
+  @media only screen and (max-width: 425px) {
+    #next-project {
+      padding-bottom: 30px; } }
   #next-project h3 {
     display: block;
     margin: 0px; }
   #next-project p {
     display: block;
-    text-decoration: underline;
     margin: 0px; }
 
 .right {
   text-align: left; }
+  @media only screen and (max-width: 425px) {
+    .right {
+      text-align: center; } }
 
 .left {
   text-align: right; }
+  @media only screen and (max-width: 425px) {
+    .left {
+      text-align: center; } }
 
 .project-description {
   position: relative;
@@ -1258,12 +1310,26 @@ p, li, a {
 .project-summary {
   width: 70%;
   padding-right: 50px; }
+  @media only screen and (max-width: 830px) {
+    .project-summary {
+      width: 100%;
+      margin-bottom: 40px;
+      padding-right: 0px !important; } }
+  @media only screen and (max-width: 425px) {
+    .project-summary p {
+      font-weight: 500 !important;
+      line-height: 26px; } }
 
 .proccess p {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  text-decoration: underline; }
 
 .proccess ul li {
   padding-bottom: 10px; }
+  @media only screen and (max-width: 830px) {
+    .proccess ul li {
+      padding-bottom: 0px;
+      line-height: 24px; } }
 
 .about-project-container {
   display: flex;
@@ -1273,18 +1339,39 @@ p, li, a {
   margin-bottom: 70px;
   width: 100%;
   border-bottom: solid 3px #5400DA; }
+  @media only screen and (max-width: 830px) {
+    .about-project-container {
+      flex-direction: column; } }
+  @media only screen and (max-width: 425px) {
+    .about-project-container {
+      padding-bottom: 20px; } }
 
 #about-project {
   padding-top: 170px; }
+  @media only screen and (max-width: 1000px) {
+    #about-project {
+      padding-top: 11vh; } }
+  @media only screen and (max-width: 425px) {
+    #about-project {
+      padding-top: 5vh; } }
 
 .project-body {
   margin-bottom: 100px;
   text-align: left; }
+  @media only screen and (max-width: 425px) {
+    .project-body {
+      margin-bottom: 25px; } }
   .project-body img {
     width: 100%; }
   .project-body p {
     margin-bottom: 70px;
     margin-top: 70px; }
+    @media only screen and (max-width: 425px) {
+      .project-body p {
+        margin-bottom: 25px;
+        margin-top: 25px;
+        font-size: 16px;
+        font-weight: 500; } }
 
 .main-project-section {
   border-bottom: solid 3px #5400DA; }
@@ -1294,12 +1381,28 @@ p, li, a {
   padding-left: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 1000px) {
+    .project-section-header-container {
+      padding: 30px 0px 30px 0px; } }
   .project-section-header-container h1 {
     margin: 0px; }
 
+.plus-wrapper {
+  width: 50px;
+  transform: scale(0.7);
+  transition: all 0.3s ease; }
+  @media only screen and (max-width: 425px) {
+    .plus-wrapper {
+      height: 30px;
+      width: 30px;
+      margin-right: 10px; } }
+
 .plus-sign {
-  transform: scale(0.5, 0.5) rotate(90deg);
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
   transition: all 0.3s ease; }
 
 #Line-4-Copy {
@@ -1314,10 +1417,15 @@ p, li, a {
   background-image: url(../img/bg.png);
   background-repeat: repeat repeat; }
   .project-section-header-container:hover .plus-sign {
-    transform: scale(1, 1) rotate(90deg); }
+    transform: rotate(90deg); }
+  .project-section-header-container:hover .plus-wrapper {
+    transform: scale(1); }
 
 .spacer {
   height: 100px; }
+  @media only screen and (max-width: 425px) {
+    .spacer {
+      display: none; } }
 
 #mobile-app-section {
   display: none; }
@@ -1330,3 +1438,9 @@ p, li, a {
 
 #behind-scenes-section {
   display: none; }
+
+.breakpoint {
+  display: none; }
+  @media only screen and (max-width: 550px) {
+    .breakpoint {
+      display: block; } }
