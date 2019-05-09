@@ -319,7 +319,7 @@ p, li, a {
     .bigger {
       font-size: 32px;
       line-height: 40px; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .bigger {
       font-size: 22px;
       font-weight: 600; } }
@@ -393,7 +393,7 @@ p, li, a {
   @media only screen and (max-width: 810px) {
     p, li, a {
       font-size: 18px; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     p, li, a {
       font-size: 16px;
       line-height: 20px;
@@ -479,10 +479,10 @@ p, li, a {
 #contact {
   color: #5400DA;
   line-height: 10px; }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 400px) {
     #contact ul li {
       font-size: 16px; } }
-  @media only screen and (max-width: 320px) and (max-width: 320px) {
+  @media only screen and (max-width: 400px) and (max-width: 400px) {
     #contact ul li a {
       font-size: 16px; } }
 
@@ -511,7 +511,7 @@ p, li, a {
       z-index: 99;
       top: 40px;
       right: 35px; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     #top-nav-toggle {
       top: 22px;
       right: 15px; } }
@@ -523,7 +523,7 @@ p, li, a {
   width: 100%;
   height: 3px;
   background: #5400DA; }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .rectangle-top {
       height: 1px; } }
 
@@ -546,7 +546,7 @@ p, li, a {
   transform-origin: left;
   transform: rotate(-45deg); }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .nav-intro {
     font-size: 16px; } }
 
@@ -587,7 +587,7 @@ p, li, a {
   @media only screen and (max-width: 1100px) {
     .name {
       font-size: 28px; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .name {
       font-size: 20px;
       font-weight: 300; } }
@@ -607,7 +607,7 @@ p, li, a {
   @media only screen and (max-width: 700px) {
     #wrapper {
       margin-top: 10vh; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     #wrapper {
       padding: 0px 12% 0px 11%; } }
 
@@ -623,7 +623,7 @@ p, li, a {
 #primary {
   height: auto;
   padding-left: 2px; }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     #primary {
       padding-left: 0px; } }
 
@@ -688,7 +688,7 @@ p, li, a {
       flex-direction: column-reverse;
       margin-bottom: 20vh;
       width: 100%; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .project-frame {
       margin-bottom: 100px !important;
       opacity: 1;
@@ -708,7 +708,7 @@ p, li, a {
   .frame-col-1 p {
     padding: 25px;
     margin: 0px; }
-    @media only screen and (max-width: 370px) {
+    @media only screen and (max-width: 400px) {
       .frame-col-1 p {
         padding: 15px; } }
 
@@ -723,7 +723,7 @@ p, li, a {
   @media only screen and (max-width: 768px) {
     .project-image {
       height: 300px; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .project-image {
       height: 180px;
       filter: grayscale(0);
@@ -743,7 +743,7 @@ p, li, a {
     .extrude-left {
       left: -22px;
       bottom: -27px; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .extrude-left {
       display: none !important; } }
 
@@ -761,7 +761,7 @@ p, li, a {
     .extrude-bottom {
       left: -22px;
       bottom: -23px; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .extrude-bottom {
       display: none !important; } }
 
@@ -772,7 +772,7 @@ p, li, a {
   width: 100%;
   bottom: 0px;
   height: 20px; }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .white-bottom {
       display: none !important; } }
 
@@ -783,13 +783,13 @@ p, li, a {
   padding-bottom: 30px;
   height: auto;
   border-bottom: 3px solid #5400DA; }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .project-header {
       padding: 15px;
       background-image: url(../img/bg.png);
       background-repeat: repeat repeat;
       background-size: 35%; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .project-header br {
       display: none; } }
 
@@ -813,7 +813,7 @@ p, li, a {
 
 .section-header {
   margin-bottom: 70px; }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     .section-header {
       margin-bottom: 30px; } }
 
@@ -962,7 +962,7 @@ p, li, a {
       .recognition-description h1 {
         margin-top: 50px;
         font-size: 30px; } }
-    @media only screen and (max-width: 370px) {
+    @media only screen and (max-width: 400px) {
       .recognition-description h1 {
         font-size: 22px;
         margin: 0px;
@@ -970,7 +970,7 @@ p, li, a {
         margin-bottom: 10px; } }
   .recognition-description ul {
     margin-bottom: 100px; }
-    @media only screen and (max-width: 370px) {
+    @media only screen and (max-width: 400px) {
       .recognition-description ul {
         margin-bottom: 50px; } }
     .recognition-description ul li, .recognition-description ul a {
@@ -1039,7 +1039,7 @@ p, li, a {
   @media only screen and (max-width: 400px) {
     #contact-section {
       margin-top: 20vh;
-      height: 100vh;
+      height: 80vh;
       margin-bottom: 0px; } }
 
 .contact-intro {
@@ -1195,7 +1195,7 @@ p, li, a {
   @media only screen and (max-width: 420px) {
     #home-scrollbar {
       margin-top: 15vh; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     #home-scrollbar {
       right: 10px;
       bottom: 50px; } }
@@ -1219,7 +1219,7 @@ p, li, a {
   @media only screen and (max-width: 700px) {
     #home-title {
       height: 10vh; } }
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 400px) {
     #home-title {
       height: 10vh;
       margin-left: 11%;
