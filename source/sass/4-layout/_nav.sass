@@ -29,7 +29,8 @@
   @media only screen and (max-width: 420px)
     width: 70%
     left: -67%
-    padding-left: 15px
+    padding: 15px
+    padding-top: 25px
   .nav-col-1
     display: none
     flex-direction: column
@@ -40,8 +41,10 @@
     margin: 0px
     margin-bottom: 40px
     font-weight: 400
+    @media only screen and (max-width: 420px)
+      margin-bottom: 15px
   li
-    padding-bottom: 10px
+    padding-top: 10px
 
 
 .sidebar-open
@@ -76,7 +79,7 @@
 
 #contact
   color: $blue
-  line-height: 23px
+  line-height: 10px
   ul
     li
       @media only screen and (max-width: 320px)
@@ -111,6 +114,9 @@
     z-index: 99
     top: 40px
     right: 35px
+  @media only screen and (max-width: 370px)
+    top: 22px
+    right: 15px
 
 #top-nav-toggle:hover
   transform: scale(1)
@@ -120,11 +126,14 @@
   width: 100%
   height: 3px
   background: $blue 
+  @media only screen and (max-width: 370px)
+    height: 1px
 
 .rectangle-side
   height: 100%
   width: 3px
   background: $blue 
+
 
 #Rectangle-1,#Rectangle-2,#Rectangle-3
   transition: all 0.3s ease

@@ -1,4 +1,5 @@
 #contact-section
+  position: relative
   display: block
   width: 100%
   height: 80vh
@@ -7,7 +8,9 @@
     margin-bottom: 80px
     margin-top: 30%
   @media only screen and (max-width: 400px)
-    margin-top: 30vh
+    margin-top: 20vh
+    height: 100vh
+    margin-bottom: 0px
 
 .contact-intro
   display: block
@@ -19,17 +22,19 @@
     margin: 0px
     letter-spacing: -0.2px
     @media only screen and (max-width: 400px)
-      font-size: 22px!important
+      font-size: 18px!important
 
 .email-link
   text-decoration: underline
   margin: 0px
   line-height: 50px
   @media only screen and (max-width: 400px)
-      font-size: 22px!important
+      font-size: 16px!important
 
 
 #footer
+  position: absolute
+  bottom: 0px
   padding-right: 3%
   display: flex
   flex-direction: row
@@ -40,6 +45,8 @@
   @media only screen and (max-width: 810px)
     justify-content: left
     opacity: .7
+  @media only screen and (max-width: 400px)
+    margin-bottom: 0px
 
 
 

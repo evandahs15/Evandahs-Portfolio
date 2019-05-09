@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Montserrat:400,500,600");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -285,7 +285,7 @@ p, li, a {
       font-size: 35px; } }
   @media only screen and (max-width: 500px) {
     .huge {
-      font-size: 30px; } }
+      font-size: 22px; } }
 
 .large {
   font-size: 55px;
@@ -303,7 +303,8 @@ p, li, a {
       font-size: 36px; } }
   @media only screen and (max-width: 400px) {
     .large {
-      font-size: 32px; } }
+      font-size: 22px;
+      font-weight: 600; } }
 
 .bigger {
   font-size: 42px;
@@ -318,6 +319,10 @@ p, li, a {
     .bigger {
       font-size: 32px;
       line-height: 40px; } }
+  @media only screen and (max-width: 370px) {
+    .bigger {
+      font-size: 22px;
+      font-weight: 600; } }
 
 .big {
   font-size: 36px;
@@ -340,7 +345,9 @@ p, li, a {
       line-height: 34px; } }
   @media only screen and (max-width: 400px) {
     .big {
-      font-size: 30px; } }
+      font-size: 18px !important;
+      line-height: 26px;
+      font-weight: 500; } }
 
 .medium {
   font-size: 30px;
@@ -352,6 +359,10 @@ p, li, a {
   @media only screen and (max-width: 810px) {
     .medium {
       font-size: 22px; } }
+  @media only screen and (max-width: 400px) {
+    .medium {
+      font-size: 18px;
+      font-weight: 300; } }
 
 .small {
   font-size: 20px;
@@ -359,6 +370,10 @@ p, li, a {
   @media only screen and (max-width: 810px) {
     .small {
       font-size: 18px; } }
+  @media only screen and (max-width: 400px) {
+    .small {
+      font-size: 16px;
+      font-weight: 400; } }
 
 ul {
   margin-top: 4px;
@@ -378,12 +393,11 @@ p, li, a {
   @media only screen and (max-width: 810px) {
     p, li, a {
       font-size: 18px; } }
-  @media only screen and (max-width: 810px) {
+  @media only screen and (max-width: 370px) {
     p, li, a {
-      line-height: 24px; } }
-
-.section-header {
-  margin-bottom: 70px; }
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500; } }
 
 .sidebar {
   transition: all 0.2s ease;
@@ -420,7 +434,8 @@ p, li, a {
     .sidebar {
       width: 70%;
       left: -67%;
-      padding-left: 15px; } }
+      padding: 15px;
+      padding-top: 25px; } }
   .sidebar .nav-col-1 {
     display: none;
     flex-direction: column;
@@ -431,8 +446,11 @@ p, li, a {
     margin: 0px;
     margin-bottom: 40px;
     font-weight: 400; }
+    @media only screen and (max-width: 420px) {
+      .sidebar h2 {
+        margin-bottom: 15px; } }
   .sidebar li {
-    padding-bottom: 10px; }
+    padding-top: 10px; }
 
 .sidebar-open {
   background-image: none;
@@ -460,7 +478,7 @@ p, li, a {
 
 #contact {
   color: #5400DA;
-  line-height: 23px; }
+  line-height: 10px; }
   @media only screen and (max-width: 320px) {
     #contact ul li {
       font-size: 16px; } }
@@ -493,6 +511,10 @@ p, li, a {
       z-index: 99;
       top: 40px;
       right: 35px; } }
+  @media only screen and (max-width: 370px) {
+    #top-nav-toggle {
+      top: 22px;
+      right: 15px; } }
 
 #top-nav-toggle:hover {
   transform: scale(1); }
@@ -501,6 +523,9 @@ p, li, a {
   width: 100%;
   height: 3px;
   background: #5400DA; }
+  @media only screen and (max-width: 370px) {
+    .rectangle-top {
+      height: 1px; } }
 
 .rectangle-side {
   height: 100%;
@@ -564,7 +589,8 @@ p, li, a {
       font-size: 28px; } }
   @media only screen and (max-width: 370px) {
     .name {
-      font-size: 26px; } }
+      font-size: 20px;
+      font-weight: 300; } }
 
 #wrapper {
   display: block;
@@ -581,6 +607,9 @@ p, li, a {
   @media only screen and (max-width: 700px) {
     #wrapper {
       margin-top: 10vh; } }
+  @media only screen and (max-width: 370px) {
+    #wrapper {
+      padding: 0px 12% 0px 11%; } }
 
 #content {
   max-width: 100%;
@@ -594,6 +623,9 @@ p, li, a {
 #primary {
   height: auto;
   padding-left: 2px; }
+  @media only screen and (max-width: 370px) {
+    #primary {
+      padding-left: 0px; } }
 
 #project-wrapper {
   display: block;
@@ -656,6 +688,11 @@ p, li, a {
       flex-direction: column-reverse;
       margin-bottom: 20vh;
       width: 100%; } }
+  @media only screen and (max-width: 370px) {
+    .project-frame {
+      margin-bottom: 100px !important;
+      opacity: 1;
+      transform: scale(1); } }
 
 .frame-col-1 {
   display: block;
@@ -671,6 +708,9 @@ p, li, a {
   .frame-col-1 p {
     padding: 25px;
     margin: 0px; }
+    @media only screen and (max-width: 370px) {
+      .frame-col-1 p {
+        padding: 15px; } }
 
 .project-image {
   display: block;
@@ -683,9 +723,11 @@ p, li, a {
   @media only screen and (max-width: 768px) {
     .project-image {
       height: 300px; } }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 370px) {
     .project-image {
-      height: 250px; } }
+      height: 180px;
+      filter: grayscale(0);
+      opacity: 1; } }
 
 .extrude-left {
   display: none;
@@ -741,27 +783,39 @@ p, li, a {
   padding-bottom: 30px;
   height: auto;
   border-bottom: 3px solid #5400DA; }
+  @media only screen and (max-width: 370px) {
+    .project-header {
+      padding: 15px;
+      background-image: url(../img/bg.png);
+      background-repeat: repeat repeat;
+      background-size: 35%; } }
+  @media only screen and (max-width: 370px) {
+    .project-header br {
+      display: none; } }
 
-.project-link:hover .project-image {
-  opacity: .95;
-  filter: grayscale(0); }
-
-.project-link:hover .project-frame {
-  transform: scale(1, 1);
-  transform-origin: left;
-  opacity: 1; }
-
-.project-link:hover .extrude-left {
-  display: block; }
-
-.project-link:hover .extrude-bottom {
-  display: block; }
-
-.project-link:hover .white-bottom {
-  display: block; }
+@media only screen and (min-width: 768px) {
+  .project-link:hover .project-image {
+    opacity: .95;
+    filter: grayscale(0); }
+  .project-link:hover .project-frame {
+    transform: scale(1, 1);
+    transform-origin: left;
+    opacity: 1; }
+  .project-link:hover .extrude-left {
+    display: block; }
+  .project-link:hover .extrude-bottom {
+    display: block; }
+  .project-link:hover .white-bottom {
+    display: block; } }
 
 .no-underline {
   text-decoration: none !important; }
+
+.section-header {
+  margin-bottom: 70px; }
+  @media only screen and (max-width: 370px) {
+    .section-header {
+      margin-bottom: 30px; } }
 
 #about {
   margin-top: 160px;
@@ -791,6 +845,9 @@ p, li, a {
   @media only screen and (max-width: 720px) {
     .col-1 {
       padding-bottom: 30px; } }
+  @media only screen and (max-width: 400px) {
+    .col-1 {
+      padding-right: 0px; } }
   .col-1 p {
     margin: 0px;
     line-height: 30px; }
@@ -812,7 +869,8 @@ p, li, a {
         line-height: 34px; } }
     @media only screen and (max-width: 400px) {
       .col-1 p {
-        font-size: 24px; } }
+        font-size: 16px !important;
+        line-height: 26px; } }
 
 .col-2 {
   display: block;
@@ -822,6 +880,9 @@ p, li, a {
   @media only screen and (max-width: 1024px) {
     .col-2 {
       width: 100%; } }
+  @media only screen and (max-width: 400px) {
+    .col-2 {
+      padding-right: 0px; } }
   .col-2 p {
     margin: 0px;
     line-height: 30px; }
@@ -843,7 +904,8 @@ p, li, a {
         line-height: 34px; } }
     @media only screen and (max-width: 400px) {
       .col-2 p {
-        font-size: 24px; } }
+        font-size: 16px !important;
+        line-height: 26px; } }
 
 #recognition {
   padding-top: 150px;
@@ -854,6 +916,9 @@ p, li, a {
     #recognition {
       display: flex;
       flex-direction: column; } }
+  @media only screen and (max-width: 400px) {
+    #recognition {
+      padding-top: 40px; } }
 
 .profile-image {
   width: 42%;
@@ -897,8 +962,17 @@ p, li, a {
       .recognition-description h1 {
         margin-top: 50px;
         font-size: 30px; } }
+    @media only screen and (max-width: 370px) {
+      .recognition-description h1 {
+        font-size: 22px;
+        margin: 0px;
+        margin-top: 40px;
+        margin-bottom: 10px; } }
   .recognition-description ul {
     margin-bottom: 100px; }
+    @media only screen and (max-width: 370px) {
+      .recognition-description ul {
+        margin-bottom: 50px; } }
     .recognition-description ul li, .recognition-description ul a {
       padding-bottom: 15px;
       color: #5400DA;
@@ -925,7 +999,8 @@ p, li, a {
           line-height: 30px; } }
       @media only screen and (max-width: 400px) {
         .recognition-description ul li, .recognition-description ul a {
-          font-size: 24px; } }
+          font-size: 16px !important;
+          line-height: 22px; } }
 
 .download-resume {
   text-decoration: underline;
@@ -948,9 +1023,11 @@ p, li, a {
       line-height: 34px; } }
   @media only screen and (max-width: 400px) {
     .download-resume {
-      font-size: 24px; } }
+      font-size: 18px !important;
+      line-height: 24px; } }
 
 #contact-section {
+  position: relative;
   display: block;
   width: 100%;
   height: 80vh;
@@ -961,7 +1038,9 @@ p, li, a {
       margin-top: 30%; } }
   @media only screen and (max-width: 400px) {
     #contact-section {
-      margin-top: 30vh; } }
+      margin-top: 20vh;
+      height: 100vh;
+      margin-bottom: 0px; } }
 
 .contact-intro {
   display: block;
@@ -975,7 +1054,7 @@ p, li, a {
     letter-spacing: -0.2px; }
     @media only screen and (max-width: 400px) {
       .contact-intro p, .contact-intro a {
-        font-size: 22px !important; } }
+        font-size: 18px !important; } }
 
 .email-link {
   text-decoration: underline;
@@ -983,9 +1062,11 @@ p, li, a {
   line-height: 50px; }
   @media only screen and (max-width: 400px) {
     .email-link {
-      font-size: 22px !important; } }
+      font-size: 16px !important; } }
 
 #footer {
+  position: absolute;
+  bottom: 0px;
   padding-right: 3%;
   display: flex;
   flex-direction: row;
@@ -997,6 +1078,9 @@ p, li, a {
     #footer {
       justify-content: left;
       opacity: .7; } }
+  @media only screen and (max-width: 400px) {
+    #footer {
+      margin-bottom: 0px; } }
 
 #footer p {
   padding-right: 20px;
@@ -1094,7 +1178,7 @@ p, li, a {
     text-decoration: underline; }
     @media only screen and (max-width: 500px) {
       #view-work h1 {
-        margin-top: 50px; } }
+        margin-top: 20px; } }
 
 #home-scrollbar {
   position: fixed;
@@ -1113,7 +1197,8 @@ p, li, a {
       margin-top: 15vh; } }
   @media only screen and (max-width: 370px) {
     #home-scrollbar {
-      right: 30px; } }
+      right: 10px;
+      bottom: 50px; } }
 
 #home-title {
   box-sizing: border-box;
@@ -1136,7 +1221,9 @@ p, li, a {
       height: 10vh; } }
   @media only screen and (max-width: 370px) {
     #home-title {
-      height: 15vh; } }
+      height: 10vh;
+      margin-left: 11%;
+      margin-right: 15px; } }
 
 .other-projects-container {
   width: 100%;
