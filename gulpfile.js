@@ -121,7 +121,8 @@ function watcher () {
 task('deploy', function () {
   return src('./build/**/*', {read: false})
     .pipe(deploy({
-      repository: 'https://github.com/evandahs15/EvandahsPortfolio.git'
+      repository: 'https://github.com/evandahs15/EvandahsPortfolio.git',
+      branches: ['master']
     }))
 })
 // use default task to launch Browsersync and watch JS files
