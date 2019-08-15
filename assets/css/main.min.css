@@ -418,6 +418,10 @@ p, li, a {
   transition: all 0.3s;
   background-image: url(../img/bg.png);
   background-repeat: repeat repeat; }
+  @media only screen and (min-width: 1800px) {
+    .sidebar {
+      width: 15%;
+      left: -12.5%; } }
   @media only screen and (max-width: 1050px) {
     .sidebar {
       width: 35%;
@@ -622,6 +626,9 @@ p, li, a {
   bottom: 0;
   right: 0;
   scroll-behavior: smooth; }
+  @media only screen and (min-width: 1700px) {
+    #wrapper {
+      left: 0; } }
   @media only screen and (max-width: 700px) {
     #wrapper {
       margin-top: 10vh; } }
@@ -640,7 +647,8 @@ p, li, a {
 
 #primary {
   height: auto;
-  padding-left: 2px; }
+  padding-left: 2px;
+  max-width: 1300px; }
   @media only screen and (max-width: 425px) {
     #primary {
       padding-left: 0px; } }
@@ -657,6 +665,9 @@ p, li, a {
   bottom: 0;
   right: 0;
   scroll-behavior: smooth; }
+  @media only screen and (min-width: 1700px) {
+    #project-wrapper {
+      left: 0; } }
   @media only screen and (max-width: 425px) {
     #project-wrapper {
       padding: 0px 12% 0px 11%;
@@ -752,6 +763,8 @@ p, li, a {
       opacity: 1; } }
 
 .extrude-left {
+  border-top: 3px solid #5400DA;
+  border-left: 3px solid #5400DA;
   display: none;
   height: 100%;
   position: absolute;
@@ -770,11 +783,13 @@ p, li, a {
       display: none !important; } }
 
 .extrude-bottom {
+  border-right: 3px solid #5400DA;
+  border-bottom: 3px solid #5400DA;
   display: none;
   width: 100%;
   position: absolute;
   z-index: -1;
-  bottom: -29px;
+  bottom: -33px;
   height: 40px;
   left: -30px;
   background-image: url(../img/bg.png);
@@ -1182,6 +1197,9 @@ p, li, a {
 .home-intro {
   height: 80vh;
   padding-top: 10%; }
+  @media only screen and (min-width: 1800px) {
+    .home-intro {
+      height: 50vh; } }
   @media only screen and (max-width: 425px) {
     .home-intro {
       padding-top: 0px; } }
